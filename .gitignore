@@ -1,0 +1,21 @@
+# The build output www/ IS committed: it is what Cloudflare Pages serves from this repository on
+# every push to main (project root directory `www`, no build command). It is derived from content/
+# and agsc.config.json by `agsc build`, never authored; rebuild it before committing.
+.wrangler
+
+# Secrets. A tracked `.env` is a lint error in its own right (AGSC-01-37, AGSC-E403).
+.env
+.env.*
+!.env.example
+
+# Local tooling
+node_modules/
+.agsc/
+
+# Editor and platform noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Written by `agsc ci` and `agsc conform`: generated, not committed in this repository.
+dist/

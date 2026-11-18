@@ -1,0 +1,36 @@
+{
+  "build": {
+    "out": "www"
+  },
+  "bundle": {
+    "id": "agenticsystemcore-standards",
+    "license_prose": "LicenseRef-AgenticSystemCore-Content-Use-1.0",
+    "license_schema": "CC0-1.0",
+    "operator": "human:andreibesleaga"
+  },
+  "contribute": [
+    {
+      "mode": "pr",
+      "target": "https://github.com/andreibesleaga/agsc-standards-node"
+    }
+  ],
+  "peers": [
+    "https://agenticsystemcore.com/.well-known/knowledge-linkset",
+    "https://patterns.agenticsystemcore.com/.well-known/knowledge-linkset"
+  ],
+  "site": {
+    "author": "Andrei N. Besleaga",
+    "base": "https://standards.agenticsystemcore.com/",
+    "tagline": "The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.",
+    "tdm_crawlers": [
+      "Applebot-Extended",
+      "CCBot",
+      "ClaudeBot",
+      "GPTBot",
+      "Google-Extended",
+      "meta-externalagent"
+    ],
+    "title": "Standards Map"
+  },
+  "spec_version": "1.1.0"
+}
