@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Standards Map</title>
+<meta name="description" content="The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.">
+<link rel="describedby" href="/.well-known/knowledge-linkset" type="application/linkset+json">
+<link rel="describedby" href="/llms.txt" type="text/plain">
+<link rel="canonical" href="https://standards.agenticsystemcore.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://standards.agenticsystemcore.com/">
+<meta property="og:title" content="Standards Map">
+<meta property="og:description" content="The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.">
+<meta property="og:site_name" content="Standards Map">
+<script type="application/ld+json">{"@context":["https://schema.org",{"prov":"http://www.w3.org/ns/prov#"}],"@id":"https://standards.agenticsystemcore.com/","@type":"Dataset","creator":{"@id":"https://standards.agenticsystemcore.com/#creator","@type":"Person","name":"Andrei N. Besleaga"},"description":"The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.","distribution":[{"@type":"DataDownload","contentUrl":"https://standards.agenticsystemcore.com/graph.jsonld","encodingFormat":"application/ld+json"},{"@type":"DataDownload","contentUrl":"https://standards.agenticsystemcore.com/graph.ttl","encodingFormat":"text/turtle"},{"@type":"DataDownload","contentUrl":"https://standards.agenticsystemcore.com/graph.nq","encodingFormat":"application/n-quads"},{"@type":"DataDownload","contentUrl":"https://standards.agenticsystemcore.com/chunks.jsonl","encodingFormat":"application/jsonl"},{"@type":"DataDownload","contentUrl":"https://standards.agenticsystemcore.com/.well-known/knowledge-linkset","encodingFormat":"application/linkset+json"}],"isAccessibleForFree":true,"license":"https://standards.agenticsystemcore.com/legal/","name":"Standards Map","prov:generatedAtTime":{"@type":"http://www.w3.org/2001/XMLSchema#dateTime","@value":"2026-11-18T15:22:17Z"},"prov:wasAttributedTo":{"@id":"https://standards.agenticsystemcore.com/#creator"},"url":"https://standards.agenticsystemcore.com/"}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/theme.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+<nav aria-label="Site">
+<a class="brand" href="/">Standards Map</a>
+<ul>
+<li><a href="/clusters/">Clusters</a></li>
+<li><a href="/concepts/">Concepts</a></li>
+<li><a href="/gates/">Gates</a></li>
+<li><a href="/procedures/">Procedures</a></li>
+<li><a href="/skills/">Skills</a></li>
+<li><a href="/now/">Now</a></li>
+<li><a href="/compose/">Compose</a></li>
+<li><a href="/search/">Search</a></li>
+<li><a href="/query/">Query</a></li>
+</ul>
+<div class="theme" id="theme" hidden><select id="theme-select" aria-label="Theme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+</nav>
+</header>
+<main id="main">
+<h1>Standards Map</h1>
+<p class="summary"><strong>Summary</strong>The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.</p>
+<p>A website that software agents can read rests on documents that already exist: RFCs and Internet-Drafts of the IETF, Recommendations and community reports of the W3C, and a few others. This node describes them in a few lines each: what the document is, its status in the words of the body that publishes it, the date of that status, and a link to the document itself.</p>
+<p>It is a node of the Agentic Knowledge Web, beside <a href="https://agenticsystemcore.com/">agenticsystemcore.com</a> and <a href="https://patterns.agenticsystemcore.com/">patterns.agenticsystemcore.com</a>. The AgenticSystemCore engine built every file here as static files: no server and no database run behind it.</p>
+<h2 id="the-map">The map</h2>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The question it answers</th>
+<th>Start with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/clusters/find/">Find</a></td>
+<td>How does a program find what a site offers?</td>
+<td><a href="/concepts/well-known-uris/">Well-known addresses</a>, <a href="/concepts/link-sets/">link sets</a>, <a href="/concepts/api-catalog/">API catalogue</a></td>
+</tr>
+<tr>
+<td><a href="/clusters/ask-first/">Ask first</a></td>
+<td>What may an automated reader do, and who is it?</td>
+<td><a href="/concepts/robots-exclusion-protocol/">robots.txt</a>, <a href="/concepts/ai-preferences-drafts/">AI usage preferences</a></td>
+</tr>
+<tr>
+<td><a href="/clusters/trust-the-bytes/">Trust the bytes</a></td>
+<td>Is this the file that was published?</td>
+<td><a href="/concepts/digest-fields/">Digest fields</a>, <a href="/concepts/http-message-signatures/">message signatures</a></td>
+</tr>
+<tr>
+<td><a href="/clusters/understand/">Understand</a></td>
+<td>How are facts written so that programs agree on them?</td>
+<td><a href="/concepts/rdf/">RDF</a>, <a href="/concepts/json-ld/">JSON-LD</a>, <a href="/concepts/shacl/">SHACL</a></td>
+</tr>
+<tr>
+<td><a href="/clusters/who-made-it/">Who made it</a></td>
+<td>Where did this content come from?</td>
+<td><a href="/concepts/content-credentials/">Content credentials</a>, <a href="/concepts/verifiable-credentials/">verifiable credentials</a></td>
+</tr>
+<tr>
+<td><a href="/clusters/act/">Act</a></td>
+<td>How does a page offer actions to an assistant?</td>
+<td><a href="/concepts/webmcp/">WebMCP</a></td>
+</tr>
+<tr>
+<td><a href="/clusters/how-it-works/">How it works</a></td>
+<td>What does a document's status mean?</td>
+<td><a href="/concepts/from-draft-to-rfc/">From Internet-Draft to RFC</a>, <a href="/concepts/w3c-reports-and-recommendations/">W3C reports and Recommendations</a></td>
+</tr>
+</tbody>
+</table>
+<p>All the cards are on the <a href="/concepts/">concepts page</a>. Protocols between agents and tool servers, or between agents, are outside this map. The one tool interface in it is WebMCP, which works inside the browser page.</p>
+<h2 id="six-ways-to-use-this-node">Six ways to use this node</h2>
+<p>Each way works here. Where part of it happens in the repository and not on the site, the line says so.</p>
+<ol>
+<li><strong>Read it as a wiki.</strong> Browse the <a href="/clusters/">clusters</a> or use the <a href="/search/">search page</a>, which runs in your browser. Cards about drafts carry the day on which the draft expires; after that day, the next build lists the card as stale on the <a href="/now/">NOW page</a> until someone checks it.</li>
+<li><strong>Use it as an agent's memory.</strong> An agent starts at the <a href="/.well-known/knowledge-linkset">discovery file</a>, which names the main machine files and gives a digest for most. It then reads <a href="/llms.txt"><code>llms.txt</code></a>, <a href="/llms-full.txt"><code>llms-full.txt</code></a> or the passages in <a href="/chunks.jsonl"><code>chunks.jsonl</code></a>, each with its address. An assistant in a browser that supports page tools can call ten tools on every item page, among them search, read, links, ask and propose. The graph is published as <a href="/graph.jsonld">JSON-LD</a>, <a href="/graph.ttl">Turtle</a> and <a href="/graph.nq">N-Quads</a>, and the <a href="/query/">query page</a> runs SPARQL over it in your browser.</li>
+<li><strong>Keep specifications alive.</strong> The node's own <a href="/concepts/cards-in-own-words/">decision</a>, its <a href="/concepts/card-format/">card format</a> and its <a href="/gates/publish-gate/">gate</a> are items like any other; the tasks link to the card format they follow. The gate's checks run in the repository on every proposed change.</li>
+<li><strong>Take the skills.</strong> The two procedures, <a href="/procedures/check-a-document-status/">check the status of a document</a> and <a href="/procedures/check-a-published-file/">check a published file against its digest</a>, are published as a <a href="/skills/">skill pack</a> with a hash for every file. Download it, or install it from a copy of the repository with <code>agsc skills install</code>.</li>
+<li><strong>Compose.</strong> On the <a href="/compose/">compose page</a>, tick the documents your own site builds on. The page adds what they require, such as the three documents the API catalogue needs, and gives you starting files, computed in your browser.</li>
+<li><strong>Work on the board.</strong> The <a href="/boards/upkeep/">upkeep board</a> lists the open tasks, most of them a re-check with a date. Take one, or <a href="/concepts/task-propose-a-missing-document/">propose a document that is missing</a>, as a pull request to the <a href="https://github.com/andreibesleaga/agsc-standards-node">repository</a>. A person merges every change. An assistant can prepare the same proposal with the <code>propose</code> tool; it cannot publish it.</li>
+</ol>
+<h2 id="how-the-cards-stay-true">How the cards stay true</h2>
+<p>Every card was checked against the page of the body that publishes its document on the day its header gives. The <a href="/procedures/check-a-document-status/">procedure</a> says how to check one again. A summary here is not the document: read the document before you rely on it.</p>
+<h2 id="who-is-behind-it">Who is behind it</h2>
+<p>This node is the independent work of one person. It is not a document of the IETF, the W3C or any other body named here, and none of them has reviewed or endorsed it. Their names are used only to say which documents are described.</p>
+<h2 id="run-your-own-node">Run your own node</h2>
+<p>The engine is the npm package <code>agentic-system-core</code>; its source is in the <a href="https://github.com/andreibesleaga/agentic-system-core">engine repository</a>. To begin, read <a href="https://agenticsystemcore.com/docs/start-here/">start here</a> on agenticsystemcore.com.</p>
+
+<h2 id="browse">Browse</h2>
+<ul class="browse"><li><a href="/clusters/">Clusters</a> (8)</li><li><a href="/concepts/">Concepts</a> (35)</li><li><a href="/gates/">Gates</a> (1)</li><li><a href="/procedures/">Procedures</a> (2)</li><li><a href="/search/">Search</a></li><li><a href="/now/">Now</a></li></ul>
+</main>
+<footer class="site"><p class="terms">&#169; 2026 Andrei N. Besleaga. All rights reserved, citing and linking allowed. AI-assisted, human-reviewed. As is, no warranty or liability; not advice. Unaffiliated with named organisations; marks belong to their owners. <a href="/legal/">Legal &amp; privacy</a> · <a href="/legal/#terms" rel="license" data-spdx="LicenseRef-AgenticSystemCore-Content-Use-1.0">Content Use Terms</a> · <a href="https://agenticsystemcore.com/">agenticsystemcore.com</a> · <a href="https://patterns.agenticsystemcore.com/">patterns.agenticsystemcore.com</a></p></footer>
+</body>
+</html>

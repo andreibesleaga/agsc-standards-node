@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTTP message signatures (RFC 9421) — Standards Map</title>
+<meta name="description" content="A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed.">
+<link rel="describedby" href="/.well-known/knowledge-linkset" type="application/linkset+json">
+<link rel="describedby" href="/llms.txt" type="text/plain">
+<link rel="canonical" href="https://standards.agenticsystemcore.com/concepts/http-message-signatures/">
+<link rel="alternate" href="/pages/http-message-signatures.md" type="text/markdown">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://standards.agenticsystemcore.com/concepts/http-message-signatures/">
+<meta property="og:title" content="HTTP message signatures (RFC 9421)">
+<meta property="og:description" content="A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed.">
+<meta property="og:site_name" content="Standards Map">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","description":"A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed.","name":"HTTP message signatures (RFC 9421)","url":"https://standards.agenticsystemcore.com/concepts/http-message-signatures/"}</script>
+<script src="/compose/agsc-core.js" defer></script>
+<script src="/compose/agsc-page-tools.js" defer></script>
+<script src="/compose/webmcp.js" defer></script>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/theme.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+<nav aria-label="Site">
+<a class="brand" href="/">Standards Map</a>
+<ul>
+<li><a href="/clusters/">Clusters</a></li>
+<li><a href="/concepts/">Concepts</a></li>
+<li><a href="/gates/">Gates</a></li>
+<li><a href="/procedures/">Procedures</a></li>
+<li><a href="/skills/">Skills</a></li>
+<li><a href="/now/">Now</a></li>
+<li><a href="/compose/">Compose</a></li>
+<li><a href="/search/">Search</a></li>
+<li><a href="/query/">Query</a></li>
+</ul>
+<div class="theme" id="theme" hidden><select id="theme-select" aria-label="Theme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+</nav>
+</header>
+<main id="main">
+<h1>HTTP message signatures (RFC 9421)</h1>
+<p class="summary"><strong>Summary</strong>A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed.</p>
+<dl class="meta">
+<dt>Type</dt><dd>concept · kind <code>explainer</code></dd>
+<dt>Cluster</dt><dd><a href="/clusters/trust-the-bytes/">Trust the bytes</a></dd>
+<dt>IRI</dt><dd><code>https://standards.agenticsystemcore.com/concepts/http-message-signatures/</code></dd>
+<dt>Provenance</dt><dd>Written with AI assistance and reviewed by the operator (origin <code>ai-assisted</code>, operator <code>human:andreibesleaga</code>)</dd>
+</dl>
+<h2 id="what-it-is"><span id="chunk-ac99d2853ee6a0ae"></span>What it is</h2>
+<p>RFC 9421 defines how to sign parts of an HTTP message, so that a receiver can check who sent it and that those parts were not changed.</p>
+<h2 id="status"><span id="chunk-de32594691ee2e3d"></span>Status</h2>
+<p>IETF Proposed Standard, February 2024. Status checked on 18 November 2026.</p>
+<h2 id="why-a-site-for-agents-uses-it"><span id="chunk-8e2a99bac79d7218"></span>Why a site for agents uses it</h2>
+<p>A digest shows the bytes were not changed by accident; a signature also says who vouches for them.</p>
+
+<h2 id="links">Relations</h2>
+<p>An outgoing relation is stated by this item; an incoming one is a backlink, stated by the other item. Each meaning reads from the item that states the relation towards its target.</p>
+<figure class="diagram" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 56" role="img" aria-labelledby="links_http-message-signatures-title links_http-message-signatures-desc" font-family="system-ui, sans-serif" font-size="14">
+  <title id="links_http-message-signatures-title">Relations of HTTP message signatures (RFC 9421)</title>
+  <desc id="links_http-message-signatures-desc">Relations of HTTP message signatures (RFC 9421). A line drawing; the highlighted element carries the accent.</desc>
+  <defs><marker id="links_http-message-signatures-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="270" y="10" width="170" height="36" rx="6" class="agsc-accent" stroke-width="2.2"/>
+    <rect x="510" y="10" width="190" height="36" rx="6"/>
+    <path d="M440 28 L494 28 L510 28" marker-end="url(#links_http-message-signatures-arrow)" class="agsc-rel-uses"/>
+    <rect x="10" y="10" width="190" height="36" rx="6"/>
+    <path d="M200 28 L216 28 L270 28" marker-end="url(#links_http-message-signatures-arrow)" class="agsc-rel-requires"/>
+  </g>
+  <g fill="currentColor" text-anchor="middle">
+    <text x="355" y="32" font-size="11">HTTP message signatures…</text>
+    <text x="605" y="24" font-size="12">uses</text>
+    <text x="605" y="40" font-size="12">Digest fields (RFC 9530)</text>
+    <text x="105" y="24" font-size="12">requires</text>
+    <text x="105" y="40" font-size="12">Web bot authentication (IETF…</text>
+  </g>
+</svg><figcaption>The highlighted box is this item. Each arrow runs from the item that states a relation to its target; the table lists the same relations.</figcaption></figure>
+<div class="table-wrap"><table class="relations">
+<thead><tr><th scope="col">Relation</th><th scope="col">Direction</th><th scope="col">Item</th><th scope="col">Meaning</th></tr></thead>
+<tbody>
+<tr><td>uses</td><td>outgoing</td><td><a href="/concepts/digest-fields/">Digest fields (RFC 9530)</a></td><td>This item draws on the target and can still be used when the target is absent.</td></tr>
+<tr><td>requires</td><td>incoming</td><td><a href="/concepts/web-bot-auth/">Web bot authentication (IETF working group)</a></td><td>This item cannot be used without the target, so choosing this item also takes the target.</td></tr>
+</tbody>
+</table></div>
+<h2 id="references">References</h2>
+<ol class="sources"><li id="source-1">Backman, A.; Richer, J.; Sporny, M. (2024). <a href="https://www.rfc-editor.org/rfc/rfc9421">HTTP Message Signatures</a>. <span class="source-url"><a href="https://www.rfc-editor.org/rfc/rfc9421">https://www.rfc-editor.org/rfc/rfc9421</a></span>. Checked 2026-11-18.</li></ol>
+<p class="views">Machine views: <a href="/pages/http-message-signatures.md">Markdown</a> · <a href="/pages/http-message-signatures.jsonld">JSON-LD</a></p>
+<p class="contribute"><a href="https://github.com/andreibesleaga/agsc-standards-node/edit/HEAD/content/concepts/http-message-signatures.md" rel="noopener" aria-label="Propose an edit to HTTP message signatures (RFC 9421)">Propose an edit</a> — your change is proposed, and a person reviews and merges it.</p>
+</main>
+<footer class="site"><p class="terms">&#169; 2026 Andrei N. Besleaga. All rights reserved, citing and linking allowed. AI-assisted, human-reviewed. As is, no warranty or liability; not advice. Unaffiliated with named organisations; marks belong to their owners. <a href="/legal/">Legal &amp; privacy</a> · <a href="/legal/#terms" rel="license" data-spdx="LicenseRef-AgenticSystemCore-Content-Use-1.0">Content Use Terms</a> · <a href="https://agenticsystemcore.com/">agenticsystemcore.com</a> · <a href="https://patterns.agenticsystemcore.com/">patterns.agenticsystemcore.com</a></p></footer>
+</body>
+</html>

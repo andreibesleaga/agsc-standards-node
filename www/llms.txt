@@ -1,0 +1,75 @@
+# Standards Map
+
+> The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.
+
+<!-- agsc:provenance
+bundle: https://standards.agenticsystemcore.com/
+license: LicenseRef-AgenticSystemCore-Content-Use-1.0
+terms: LicenseRef-AgenticSystemCore-Content-Use-1.0
+spec_version: 1.1.0
+bundle_version: 0.0.0+1.gf2e1f939c75c
+generated_at: 2026-11-18T15:22:17Z
+assistance: content may be AI-assisted; each item states its origin in prov.origin and each accepted contribution carries an Assisted-by: trailer
+-->
+
+## Act
+
+- [WebMCP](https://standards.agenticsystemcore.com/concepts/webmcp/): A draft browser interface with which a web page registers tools that an assistant in the browser can call.
+
+## Ask first
+
+- [AI usage preferences \(IETF drafts)](https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/): Two IETF working-group drafts: a vocabulary for stating how content may be used by automated systems, and a way to attach it to content.
+- [ODRL Information Model 2.2](https://standards.agenticsystemcore.com/concepts/odrl/): A W3C policy language for stating how content and services may be used.
+- [robots.txt \(RFC 9309)](https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/): The rules of the robots.txt file, with which a site tells crawlers what they may fetch.
+- [TDM Reservation Protocol](https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/): A way for a rights holder to reserve text and data mining rights, in a file, a header or page metadata.
+- [Web bot authentication \(IETF working group)](https://standards.agenticsystemcore.com/concepts/web-bot-auth/): The IETF working group on how automated clients prove who they are to the sites they visit.
+
+## Find
+
+- [API catalogue \(RFC 9727)](https://standards.agenticsystemcore.com/concepts/api-catalog/): A well-known address and a link relation with which a publisher lists its APIs in one link set.
+- [IETF working group on discovering agents \(DAWN)](https://standards.agenticsystemcore.com/concepts/dawn-working-group/): The IETF working group chartered to specify how a client discovers public facts about AI agents.
+- [Data Catalog Vocabulary \(DCAT 3)](https://standards.agenticsystemcore.com/concepts/dcat/): A W3C vocabulary for describing catalogues of datasets and data services.
+- [Link sets \(RFC 9264)](https://standards.agenticsystemcore.com/concepts/link-sets/): A document format that carries many typed links at once, in JSON or in text.
+- [llms.txt](https://standards.agenticsystemcore.com/concepts/llms-txt/): A Markdown file, at the root of a site or of a path in it, that gives language models a short overview and links to Markdown pages.
+- [schema.org](https://standards.agenticsystemcore.com/concepts/schema-org/): A shared vocabulary of types and properties for describing things on web pages.
+- [security.txt \(RFC 9116)](https://standards.agenticsystemcore.com/concepts/security-txt/): A text file at a well-known address that says how to report a security problem.
+- [Web linking \(RFC 8288)](https://standards.agenticsystemcore.com/concepts/web-linking/): Typed links between web resources, and the HTTP Link header field that carries them.
+- [Well-known addresses \(RFC 8615)](https://standards.agenticsystemcore.com/concepts/well-known-uris/): A reserved path on every site, /.well-known/, where a site publishes files about itself at a fixed place.
+
+## How it works
+
+- [From Internet-Draft to RFC](https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/): How to read the status of an IETF document: a draft is work in progress and expires; an RFC is published and keeps its number.
+- [W3C reports and Recommendations](https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/): How to read the status of a W3C document: a Recommendation is a W3C standard; a Community Group Report is not.
+
+## Trust the bytes
+
+- [Digest fields \(RFC 9530)](https://standards.agenticsystemcore.com/concepts/digest-fields/): HTTP fields that carry a hash of the message content or of the representation, so a receiver can check what it got.
+- [HTTP message signatures \(RFC 9421)](https://standards.agenticsystemcore.com/concepts/http-message-signatures/): A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed.
+- [JSON canonicalization \(RFC 8785)](https://standards.agenticsystemcore.com/concepts/json-canonicalization/): One fixed way to write JSON, so that equal data gives equal bytes before hashing or signing.
+- [RDF dataset canonicalization](https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/): A W3C algorithm that gives one fixed form of an RDF dataset, so that it can be hashed or signed.
+
+## Understand
+
+- [JSON-LD 1.1](https://standards.agenticsystemcore.com/concepts/json-ld/): A W3C syntax for writing linked data as JSON, so that a JSON document maps to RDF.
+- [PROV-O](https://standards.agenticsystemcore.com/concepts/prov-o/): A W3C vocabulary for recording who or what made or changed a thing.
+- [RDF](https://standards.agenticsystemcore.com/concepts/rdf/): The W3C data model for statements about things: triples, graphs and datasets.
+- [SHACL](https://standards.agenticsystemcore.com/concepts/shacl/): A W3C language for checking an RDF graph against a set of conditions called shapes.
+- [SKOS](https://standards.agenticsystemcore.com/concepts/skos/): A W3C data model for thesauri, taxonomies, classification schemes and subject heading systems.
+- [SPARQL](https://standards.agenticsystemcore.com/concepts/sparql/): The W3C query language for RDF data, for asking questions of a graph.
+
+## Upkeep
+
+- [Card format](https://standards.agenticsystemcore.com/concepts/card-format/): What a card of this node must hold, stated so that tasks can follow it and a check can test it.
+- [Cards are written in the node's own words](https://standards.agenticsystemcore.com/concepts/cards-in-own-words/): The decision that each card is a few lines in this node's own words, with a link to the document it describes.
+- [Check the status of a document](https://standards.agenticsystemcore.com/procedures/check-a-document-status/): Compare one card with the page of the body that publishes the document, and propose the result.
+- [Check a published file against its digest](https://standards.agenticsystemcore.com/procedures/check-a-published-file/): Compute the digest of one file of this node and compare it with the digest the discovery file gives.
+- [Publish gate](https://standards.agenticsystemcore.com/gates/publish-gate/): Publish gate
+- [Propose a document this node should describe](https://standards.agenticsystemcore.com/concepts/task-propose-a-missing-document/): Name a published document that an agent-readable site builds on and that has no card here, with its address and status.
+- [Re-check the AI usage preferences drafts](https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/): Read the current versions of the two IETF drafts and bring their card up to date, before 20 February 2027.
+- [Re-check the working group on discovering agents](https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/): See whether the IETF working group has adopted a document, and bring its card up to date, before 18 February 2027.
+- [Re-check the web bot authentication draft](https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/): Read the current version of the working group's draft and bring its card up to date, before 2 May 2027.
+
+## Who made it
+
+- [C2PA content credentials](https://standards.agenticsystemcore.com/concepts/content-credentials/): A specification that binds a signed record of how a media file was made and edited to the file itself.
+- [Verifiable Credentials Data Model 2.0](https://standards.agenticsystemcore.com/concepts/verifiable-credentials/): A W3C data model for signed claims that an issuer makes, a holder keeps and a verifier checks.

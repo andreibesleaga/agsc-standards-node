@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web linking (RFC 8288) — Standards Map</title>
+<meta name="description" content="Typed links between web resources, and the HTTP Link header field that carries them.">
+<link rel="describedby" href="/.well-known/knowledge-linkset" type="application/linkset+json">
+<link rel="describedby" href="/llms.txt" type="text/plain">
+<link rel="canonical" href="https://standards.agenticsystemcore.com/concepts/web-linking/">
+<link rel="alternate" href="/pages/web-linking.md" type="text/markdown">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://standards.agenticsystemcore.com/concepts/web-linking/">
+<meta property="og:title" content="Web linking (RFC 8288)">
+<meta property="og:description" content="Typed links between web resources, and the HTTP Link header field that carries them.">
+<meta property="og:site_name" content="Standards Map">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","description":"Typed links between web resources, and the HTTP Link header field that carries them.","name":"Web linking (RFC 8288)","url":"https://standards.agenticsystemcore.com/concepts/web-linking/"}</script>
+<script src="/compose/agsc-core.js" defer></script>
+<script src="/compose/agsc-page-tools.js" defer></script>
+<script src="/compose/webmcp.js" defer></script>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/theme.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+<nav aria-label="Site">
+<a class="brand" href="/">Standards Map</a>
+<ul>
+<li><a href="/clusters/">Clusters</a></li>
+<li><a href="/concepts/">Concepts</a></li>
+<li><a href="/gates/">Gates</a></li>
+<li><a href="/procedures/">Procedures</a></li>
+<li><a href="/skills/">Skills</a></li>
+<li><a href="/now/">Now</a></li>
+<li><a href="/compose/">Compose</a></li>
+<li><a href="/search/">Search</a></li>
+<li><a href="/query/">Query</a></li>
+</ul>
+<div class="theme" id="theme" hidden><select id="theme-select" aria-label="Theme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+</nav>
+</header>
+<main id="main">
+<h1>Web linking (RFC 8288)</h1>
+<p class="summary"><strong>Summary</strong>Typed links between web resources, and the HTTP Link header field that carries them.</p>
+<dl class="meta">
+<dt>Type</dt><dd>concept · kind <code>explainer</code></dd>
+<dt>Cluster</dt><dd><a href="/clusters/find/">Find</a></dd>
+<dt>IRI</dt><dd><code>https://standards.agenticsystemcore.com/concepts/web-linking/</code></dd>
+<dt>Provenance</dt><dd>Written with AI assistance and reviewed by the operator (origin <code>ai-assisted</code>, operator <code>human:andreibesleaga</code>)</dd>
+</dl>
+<h2 id="what-it-is"><span id="chunk-1a764a9f0f2311e5"></span>What it is</h2>
+<p>RFC 8288 defines typed links, each with a relation type that says what the link means, and the HTTP <code>Link</code> header field.</p>
+<h2 id="status"><span id="chunk-9a2e5c7b59d5ce64"></span>Status</h2>
+<p>IETF Proposed Standard, October 2017. It obsoletes RFC 5988. Status checked on 18 November 2026.</p>
+<h2 id="why-a-site-for-agents-uses-it"><span id="chunk-39fcbba93a800e54"></span>Why a site for agents uses it</h2>
+<p>A link that names its kind can be followed by a program without guessing.</p>
+
+<h2 id="links">Relations</h2>
+<p>An outgoing relation is stated by this item; an incoming one is a backlink, stated by the other item. Each meaning reads from the item that states the relation towards its target.</p>
+<figure class="diagram" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 100" role="img" aria-labelledby="links_web-linking-title links_web-linking-desc" font-family="system-ui, sans-serif" font-size="14">
+  <title id="links_web-linking-title">Relations of Web linking (RFC 8288)</title>
+  <desc id="links_web-linking-desc">Relations of Web linking (RFC 8288). A line drawing; the highlighted element carries the accent.</desc>
+  <defs><marker id="links_web-linking-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="270" y="32" width="170" height="36" rx="6" class="agsc-accent" stroke-width="2.2"/>
+    <rect x="10" y="10" width="190" height="36" rx="6"/>
+    <path d="M200 28 L216 28 L270 36.5" marker-end="url(#links_web-linking-arrow)" class="agsc-rel-uses"/>
+    <rect x="10" y="54" width="190" height="36" rx="6"/>
+    <path d="M200 72 L216 72 L270 63.5" marker-end="url(#links_web-linking-arrow)" class="agsc-rel-requires"/>
+  </g>
+  <g fill="currentColor" text-anchor="middle">
+    <text x="355" y="54" font-size="12">Web linking (RFC 8288)</text>
+    <text x="105" y="24" font-size="12">uses</text>
+    <text x="105" y="40" font-size="12">Link sets (RFC 9264)</text>
+    <text x="105" y="68" font-size="12">requires</text>
+    <text x="105" y="84" font-size="12">API catalogue (RFC 9727)</text>
+  </g>
+</svg><figcaption>The highlighted box is this item. Each arrow runs from the item that states a relation to its target; the table lists the same relations.</figcaption></figure>
+<div class="table-wrap"><table class="relations">
+<thead><tr><th scope="col">Relation</th><th scope="col">Direction</th><th scope="col">Item</th><th scope="col">Meaning</th></tr></thead>
+<tbody>
+<tr><td>uses</td><td>incoming</td><td><a href="/concepts/link-sets/">Link sets (RFC 9264)</a></td><td>This item draws on the target and can still be used when the target is absent.</td></tr>
+<tr><td>requires</td><td>incoming</td><td><a href="/concepts/api-catalog/">API catalogue (RFC 9727)</a></td><td>This item cannot be used without the target, so choosing this item also takes the target.</td></tr>
+</tbody>
+</table></div>
+<h2 id="references">References</h2>
+<ol class="sources"><li id="source-1">Nottingham, M. (2017). <a href="https://www.rfc-editor.org/rfc/rfc8288">Web Linking</a>. <span class="source-url"><a href="https://www.rfc-editor.org/rfc/rfc8288">https://www.rfc-editor.org/rfc/rfc8288</a></span>. Checked 2026-11-18.</li></ol>
+<p class="views">Machine views: <a href="/pages/web-linking.md">Markdown</a> · <a href="/pages/web-linking.jsonld">JSON-LD</a></p>
+<p class="contribute"><a href="https://github.com/andreibesleaga/agsc-standards-node/edit/HEAD/content/concepts/web-linking.md" rel="noopener" aria-label="Propose an edit to Web linking (RFC 8288)">Propose an edit</a> — your change is proposed, and a person reviews and merges it.</p>
+</main>
+<footer class="site"><p class="terms">&#169; 2026 Andrei N. Besleaga. All rights reserved, citing and linking allowed. AI-assisted, human-reviewed. As is, no warranty or liability; not advice. Unaffiliated with named organisations; marks belong to their owners. <a href="/legal/">Legal &amp; privacy</a> · <a href="/legal/#terms" rel="license" data-spdx="LicenseRef-AgenticSystemCore-Content-Use-1.0">Content Use Terms</a> · <a href="https://agenticsystemcore.com/">agenticsystemcore.com</a> · <a href="https://patterns.agenticsystemcore.com/">patterns.agenticsystemcore.com</a></p></footer>
+</body>
+</html>

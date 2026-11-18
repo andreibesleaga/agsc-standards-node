@@ -1,0 +1,111 @@
+chunks[110]{id,item,kind,section,ordinal,title,digest}:
+  8b89f727aa66876b,act,cluster,"",0,Act,4b47f3a026ee6d8d
+  018b7a81a198a0bd,ai-preferences-drafts,concept,status,0,AI usage preferences (IETF drafts),ee7bc1a0c69f8a52
+  300cdff30cfcc428,ai-preferences-drafts,concept,what-it-is,0,AI usage preferences (IETF drafts),95822393bb587770
+  7493b6f30e6510cf,ai-preferences-drafts,concept,why-a-site-for-agents-uses-it,0,AI usage preferences (IETF drafts),3f4b5f0b4ca7e44f
+  19e0a8c81751eec7,api-catalog,concept,status,0,API catalogue (RFC 9727),58d45f78e124f129
+  0752a599370d067c,api-catalog,concept,what-it-is,0,API catalogue (RFC 9727),6ac42f6f859b6429
+  a2ee0ef600b71ef9,api-catalog,concept,why-a-site-for-agents-uses-it,0,API catalogue (RFC 9727),04769cc5711ad244
+  0b16dd46bdf0a560,ask-first,cluster,"",0,Ask first,4e4a7f889117f593
+  dae05215059cd27e,card-format,concept,specification,0,Card format,c45d9ff58f2e09f7
+  a90cccce6283c580,cards-in-own-words,concept,decision,0,Cards are written in the node's own words,dbaaacc968bbf430
+  6d29e8983b60b3e5,check-a-document-status,procedure,"",0,Check the status of a document,fe8c57641e356809
+  50485c7943a56c9a,check-a-document-status,procedure,checks,0,Check the status of a document,aa9892a469f9371e
+  555ffb34152b67e7,check-a-document-status,procedure,steps,0,Check the status of a document,850233e0459ac946
+  62d099b566bf4a45,check-a-document-status,procedure,when,0,Check the status of a document,922d886898e1163c
+  3a10d8d85e1b7453,check-a-published-file,procedure,"",0,Check a published file against its digest,caa7ab840b023cb2
+  c2be272d3605e0da,check-a-published-file,procedure,checks,0,Check a published file against its digest,fa1f73f737f84c2c
+  f88e1395c75b2676,check-a-published-file,procedure,steps,0,Check a published file against its digest,2e7b3ed79a3d08a8
+  1e03b6575635f0c9,check-a-published-file,procedure,when,0,Check a published file against its digest,9ba5d8b828dcdda9
+  e2c10ce13539df2f,content-credentials,concept,status,0,C2PA content credentials,58df0636dc8c0e13
+  2aa29b465af0b351,content-credentials,concept,what-it-is,0,C2PA content credentials,1b2cb02ffd059132
+  32b62d36c6662064,content-credentials,concept,why-a-site-for-agents-uses-it,0,C2PA content credentials,1203ca0d728934af
+  52f51995c41dd032,dawn-working-group,concept,status,0,IETF working group on discovering agents (DAWN),2688bff1dba89ec1
+  405538ed17f37fa4,dawn-working-group,concept,what-it-is,0,IETF working group on discovering agents (DAWN),f6dd60297d1adb57
+  262bb62db440c5ec,dawn-working-group,concept,why-a-site-for-agents-uses-it,0,IETF working group on discovering agents (DAWN),361d2aeb133018c0
+  96948fc0ffbddedf,dcat,concept,status,0,Data Catalog Vocabulary (DCAT 3),91733003b9962e31
+  5b0cce70c200a75b,dcat,concept,what-it-is,0,Data Catalog Vocabulary (DCAT 3),3b43d100cdebea2a
+  d6c346c3a4ac6448,dcat,concept,why-a-site-for-agents-uses-it,0,Data Catalog Vocabulary (DCAT 3),cf68ba3676bcbe50
+  610775a8dfb14938,digest-fields,concept,status,0,Digest fields (RFC 9530),1d3a51e39bb7f321
+  08b2da8af314ef13,digest-fields,concept,what-it-is,0,Digest fields (RFC 9530),a5357a25e92de58c
+  3d78cd5f1c8bd473,digest-fields,concept,why-a-site-for-agents-uses-it,0,Digest fields (RFC 9530),dece558083ef57d6
+  9bd621d9fe431c56,find,cluster,"",0,Find,d7a50d6644e91dc6
+  c9e656533088595e,from-draft-to-rfc,concept,status,0,From Internet-Draft to RFC,d03569df17290116
+  0332eb4c7e2c1c7d,from-draft-to-rfc,concept,what-it-is,0,From Internet-Draft to RFC,ce3c860b0ce3a070
+  25c2047baa9f3d7f,from-draft-to-rfc,concept,why-a-site-for-agents-uses-it,0,From Internet-Draft to RFC,e8d5502ad16f2dbc
+  f80828abd96cd842,how-it-works,cluster,"",0,How it works,d611365445093060
+  de32594691ee2e3d,http-message-signatures,concept,status,0,HTTP message signatures (RFC 9421),a8c8c1daa1088914
+  ac99d2853ee6a0ae,http-message-signatures,concept,what-it-is,0,HTTP message signatures (RFC 9421),fef4e72206f49626
+  8e2a99bac79d7218,http-message-signatures,concept,why-a-site-for-agents-uses-it,0,HTTP message signatures (RFC 9421),ce6ac5db140129d9
+  872a96887780cc2a,json-canonicalization,concept,status,0,JSON canonicalization (RFC 8785),7a9a4d2e0e3dae4e
+  d58a5e57ab67b2c5,json-canonicalization,concept,what-it-is,0,JSON canonicalization (RFC 8785),f8abf079a8e1ee42
+  18b3ac7ffbb4f3c9,json-canonicalization,concept,why-a-site-for-agents-uses-it,0,JSON canonicalization (RFC 8785),843b0e7f3079cc5d
+  caa13a53b1c6cb38,json-ld,concept,status,0,JSON-LD 1.1,376a53ce18f4b53c
+  aa630634717bcb5c,json-ld,concept,what-it-is,0,JSON-LD 1.1,5cb2ad302cc5d46e
+  28bd725169bba163,json-ld,concept,why-a-site-for-agents-uses-it,0,JSON-LD 1.1,c84f60332e964ae0
+  522e8e7559a0a9e0,link-sets,concept,status,0,Link sets (RFC 9264),b15d3b769c3ccd97
+  771f45bbd64b8c27,link-sets,concept,what-it-is,0,Link sets (RFC 9264),e7b4f37f58604813
+  8143b87eff54273e,link-sets,concept,why-a-site-for-agents-uses-it,0,Link sets (RFC 9264),a9f6a6b8d942023c
+  1ab56b6bef06d4e3,llms-txt,concept,status,0,llms.txt,c6c8106110ae8072
+  2a861eab499a60e6,llms-txt,concept,what-it-is,0,llms.txt,4bc7f1f5884d8ec9
+  5db7c727612ff360,llms-txt,concept,why-a-site-for-agents-uses-it,0,llms.txt,ce3ab872373b28fd
+  c3a07ec47ae7ddf1,odrl,concept,status,0,ODRL Information Model 2.2,997389f7ef9525c1
+  d6184b087b5e7614,odrl,concept,what-it-is,0,ODRL Information Model 2.2,1ae8ff9b87050350
+  ef3dc40c6b438852,odrl,concept,why-a-site-for-agents-uses-it,0,ODRL Information Model 2.2,62b7a573e5cde290
+  90041be248cf5716,prov-o,concept,status,0,PROV-O,d8ded6247311f21a
+  d81d3e0d42668172,prov-o,concept,what-it-is,0,PROV-O,a89e3b12a33a8d78
+  82c87df8765af7f3,prov-o,concept,why-a-site-for-agents-uses-it,0,PROV-O,f33bca8172008e29
+  b913f9a91738696a,publish-gate,gate,"",0,Publish gate,b147a48ec04042f9
+  dbce488ed27bb7b3,rdf,concept,status,0,RDF,efee5d3b06da5754
+  74f41cc4c1d1f727,rdf,concept,what-it-is,0,RDF,98bec06a0593a65d
+  75064f0f67e58e28,rdf,concept,why-a-site-for-agents-uses-it,0,RDF,cdd204ba9023269e
+  aebbedcd77a0ae19,rdf-dataset-canonicalization,concept,status,0,RDF dataset canonicalization,6ab884d2be6c662c
+  f7ef6685d4caa8ad,rdf-dataset-canonicalization,concept,what-it-is,0,RDF dataset canonicalization,7a35ccd5ff215ba4
+  bd2e22bea8f1fda9,rdf-dataset-canonicalization,concept,why-a-site-for-agents-uses-it,0,RDF dataset canonicalization,5becc950dc28940c
+  b4793c9d964d9b99,robots-exclusion-protocol,concept,status,0,robots.txt (RFC 9309),8d85c0d301c3af1c
+  6c462c22ae553fff,robots-exclusion-protocol,concept,what-it-is,0,robots.txt (RFC 9309),c6b2c80de3522620
+  4f280dd6fadbb37d,robots-exclusion-protocol,concept,why-a-site-for-agents-uses-it,0,robots.txt (RFC 9309),1480826f94180464
+  5604a7200b9c76f9,schema-org,concept,status,0,schema.org,c0b24a230bd10748
+  1e1dfb3fce7aa014,schema-org,concept,what-it-is,0,schema.org,02818cb17a2de015
+  93396c8802902c12,schema-org,concept,why-a-site-for-agents-uses-it,0,schema.org,5ba2a867e8509534
+  8d67d1bc787d548b,security-txt,concept,status,0,security.txt (RFC 9116),fb854737a9cebc24
+  72df21e93c26cef7,security-txt,concept,what-it-is,0,security.txt (RFC 9116),9644f9ab7d02a763
+  15749d83d3365bfa,security-txt,concept,why-a-site-for-agents-uses-it,0,security.txt (RFC 9116),c51a7c2f9c4b0c0b
+  129846a33d8fb0e7,shacl,concept,status,0,SHACL,2188191026ac9b4c
+  76f2460f33822542,shacl,concept,what-it-is,0,SHACL,8e8409380f34834e
+  72be31ebf38cb153,shacl,concept,why-a-site-for-agents-uses-it,0,SHACL,75ad22b4953ee7a2
+  fc6975f06dd01568,skos,concept,status,0,SKOS,5ef902221bec83bc
+  c493e399f1ae4981,skos,concept,what-it-is,0,SKOS,35ae7c68850491fc
+  0de09189c452ead7,skos,concept,why-a-site-for-agents-uses-it,0,SKOS,f30f022870136e14
+  934ab919f6f6048b,sparql,concept,status,0,SPARQL,47a00d793ba2bd3a
+  4435973113a77b1e,sparql,concept,what-it-is,0,SPARQL,410cc48131880d4e
+  a6d1fd6511e2e29e,sparql,concept,why-a-site-for-agents-uses-it,0,SPARQL,30e65c2c7f61bb23
+  308c0c4b230b2b18,task-propose-a-missing-document,concept,task,0,Propose a document this node should describe,d21e6f9f2a7ee1a7
+  a86d0ba165ab6c77,task-recheck-ai-preferences-drafts,concept,task,0,Re-check the AI usage preferences drafts,192dc5df83d68cfb
+  990ab1a3d1ff9a44,task-recheck-dawn-working-group,concept,task,0,Re-check the working group on discovering agents,e35c59125a738148
+  47bc8cb15085626b,task-recheck-web-bot-auth-draft,concept,task,0,Re-check the web bot authentication draft,21ee5b9493adc58d
+  01ab4e5e1cec8fc4,tdm-reservation-protocol,concept,status,0,TDM Reservation Protocol,b2d0a48bec7022d8
+  c7b2aa4844415edf,tdm-reservation-protocol,concept,what-it-is,0,TDM Reservation Protocol,43748c0fbf276d00
+  cc9f7a5923d31adf,tdm-reservation-protocol,concept,why-a-site-for-agents-uses-it,0,TDM Reservation Protocol,ed02761fbf4181c3
+  e53086262d5722a4,trust-the-bytes,cluster,"",0,Trust the bytes,b0930b659a4a2c1a
+  94f8e5a8a201925a,understand,cluster,"",0,Understand,1aa036b16efeacf5
+  f72d29789cfb40cc,upkeep,cluster,"",0,Upkeep,1fb071b347e59194
+  7ea27ef8fefcdf92,verifiable-credentials,concept,status,0,Verifiable Credentials Data Model 2.0,1f332a3e84296714
+  7fad76a03beb9d67,verifiable-credentials,concept,what-it-is,0,Verifiable Credentials Data Model 2.0,339ecf619f120d88
+  5f300ac0b2724a17,verifiable-credentials,concept,why-a-site-for-agents-uses-it,0,Verifiable Credentials Data Model 2.0,04674158fae952b0
+  bc8364fb2d2f02be,w3c-reports-and-recommendations,concept,status,0,W3C reports and Recommendations,3ef611b7e389edc8
+  15d867f0a7904b6f,w3c-reports-and-recommendations,concept,what-it-is,0,W3C reports and Recommendations,7da21805bbd447cf
+  74f1adb1363ccfd4,w3c-reports-and-recommendations,concept,why-a-site-for-agents-uses-it,0,W3C reports and Recommendations,92f7d446d257a940
+  aa28d0ae9aa0ec2c,web-bot-auth,concept,status,0,Web bot authentication (IETF working group),e085e200f06f3fff
+  8ee23112d2c257a2,web-bot-auth,concept,what-it-is,0,Web bot authentication (IETF working group),539ca21a6cae45bc
+  1c1add9d2c9fe800,web-bot-auth,concept,why-a-site-for-agents-uses-it,0,Web bot authentication (IETF working group),a43f83feffbab7fa
+  9a2e5c7b59d5ce64,web-linking,concept,status,0,Web linking (RFC 8288),c961bb99af0e803f
+  1a764a9f0f2311e5,web-linking,concept,what-it-is,0,Web linking (RFC 8288),1669567f2c8d2c86
+  39fcbba93a800e54,web-linking,concept,why-a-site-for-agents-uses-it,0,Web linking (RFC 8288),ed417a75ddf825bd
+  9c8691cb3936ef54,webmcp,concept,status,0,WebMCP,7b1fcfb8b74079ad
+  b97d5cba1793246d,webmcp,concept,what-it-is,0,WebMCP,03dad17724307439
+  7adc5b331d8b96f1,webmcp,concept,why-a-site-for-agents-uses-it,0,WebMCP,71ec9665656034b1
+  5416deb6181606f1,well-known-uris,concept,status,0,Well-known addresses (RFC 8615),edbf62907de7ed27
+  a3dd48a6206b0a05,well-known-uris,concept,what-it-is,0,Well-known addresses (RFC 8615),e2ef7d7d054e810e
+  f6bd34f40c9c9df7,well-known-uris,concept,why-a-site-for-agents-uses-it,0,Well-known addresses (RFC 8615),3b883cb46c28c021
+  04a38edc73a98845,who-made-it,cluster,"",0,Who made it,ef86f00d85ef04ca

@@ -1,0 +1,676 @@
+# Standards Map
+
+> The published documents that an agent-readable website builds on: RFCs, Internet-Drafts, W3C documents and a few others, a few lines each, with status and links. A node of the Agentic Knowledge Web.
+
+<!-- agsc:provenance
+bundle: https://standards.agenticsystemcore.com/
+license: LicenseRef-AgenticSystemCore-Content-Use-1.0
+terms: LicenseRef-AgenticSystemCore-Content-Use-1.0
+spec_version: 1.1.0
+bundle_version: 0.0.0+1.gf2e1f939c75c
+generated_at: 2026-11-18T15:22:17Z
+assistance: content may be AI-assisted; each item states its origin in prov.origin and each accepted contribution carries an Assisted-by: trailer
+-->
+
+## Act
+
+- [WebMCP](https://standards.agenticsystemcore.com/concepts/webmcp/): A draft browser interface with which a web page registers tools that an assistant in the browser can call.
+
+## Ask first
+
+- [AI usage preferences \(IETF drafts)](https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/): Two IETF working-group drafts: a vocabulary for stating how content may be used by automated systems, and a way to attach it to content.
+- [ODRL Information Model 2.2](https://standards.agenticsystemcore.com/concepts/odrl/): A W3C policy language for stating how content and services may be used.
+- [robots.txt \(RFC 9309)](https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/): The rules of the robots.txt file, with which a site tells crawlers what they may fetch.
+- [TDM Reservation Protocol](https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/): A way for a rights holder to reserve text and data mining rights, in a file, a header or page metadata.
+- [Web bot authentication \(IETF working group)](https://standards.agenticsystemcore.com/concepts/web-bot-auth/): The IETF working group on how automated clients prove who they are to the sites they visit.
+
+## Find
+
+- [API catalogue \(RFC 9727)](https://standards.agenticsystemcore.com/concepts/api-catalog/): A well-known address and a link relation with which a publisher lists its APIs in one link set.
+- [IETF working group on discovering agents \(DAWN)](https://standards.agenticsystemcore.com/concepts/dawn-working-group/): The IETF working group chartered to specify how a client discovers public facts about AI agents.
+- [Data Catalog Vocabulary \(DCAT 3)](https://standards.agenticsystemcore.com/concepts/dcat/): A W3C vocabulary for describing catalogues of datasets and data services.
+- [Link sets \(RFC 9264)](https://standards.agenticsystemcore.com/concepts/link-sets/): A document format that carries many typed links at once, in JSON or in text.
+- [llms.txt](https://standards.agenticsystemcore.com/concepts/llms-txt/): A Markdown file, at the root of a site or of a path in it, that gives language models a short overview and links to Markdown pages.
+- [schema.org](https://standards.agenticsystemcore.com/concepts/schema-org/): A shared vocabulary of types and properties for describing things on web pages.
+- [security.txt \(RFC 9116)](https://standards.agenticsystemcore.com/concepts/security-txt/): A text file at a well-known address that says how to report a security problem.
+- [Web linking \(RFC 8288)](https://standards.agenticsystemcore.com/concepts/web-linking/): Typed links between web resources, and the HTTP Link header field that carries them.
+- [Well-known addresses \(RFC 8615)](https://standards.agenticsystemcore.com/concepts/well-known-uris/): A reserved path on every site, /.well-known/, where a site publishes files about itself at a fixed place.
+
+## How it works
+
+- [From Internet-Draft to RFC](https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/): How to read the status of an IETF document: a draft is work in progress and expires; an RFC is published and keeps its number.
+- [W3C reports and Recommendations](https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/): How to read the status of a W3C document: a Recommendation is a W3C standard; a Community Group Report is not.
+
+## Trust the bytes
+
+- [Digest fields \(RFC 9530)](https://standards.agenticsystemcore.com/concepts/digest-fields/): HTTP fields that carry a hash of the message content or of the representation, so a receiver can check what it got.
+- [HTTP message signatures \(RFC 9421)](https://standards.agenticsystemcore.com/concepts/http-message-signatures/): A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed.
+- [JSON canonicalization \(RFC 8785)](https://standards.agenticsystemcore.com/concepts/json-canonicalization/): One fixed way to write JSON, so that equal data gives equal bytes before hashing or signing.
+- [RDF dataset canonicalization](https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/): A W3C algorithm that gives one fixed form of an RDF dataset, so that it can be hashed or signed.
+
+## Understand
+
+- [JSON-LD 1.1](https://standards.agenticsystemcore.com/concepts/json-ld/): A W3C syntax for writing linked data as JSON, so that a JSON document maps to RDF.
+- [PROV-O](https://standards.agenticsystemcore.com/concepts/prov-o/): A W3C vocabulary for recording who or what made or changed a thing.
+- [RDF](https://standards.agenticsystemcore.com/concepts/rdf/): The W3C data model for statements about things: triples, graphs and datasets.
+- [SHACL](https://standards.agenticsystemcore.com/concepts/shacl/): A W3C language for checking an RDF graph against a set of conditions called shapes.
+- [SKOS](https://standards.agenticsystemcore.com/concepts/skos/): A W3C data model for thesauri, taxonomies, classification schemes and subject heading systems.
+- [SPARQL](https://standards.agenticsystemcore.com/concepts/sparql/): The W3C query language for RDF data, for asking questions of a graph.
+
+## Upkeep
+
+- [Card format](https://standards.agenticsystemcore.com/concepts/card-format/): What a card of this node must hold, stated so that tasks can follow it and a check can test it.
+- [Cards are written in the node's own words](https://standards.agenticsystemcore.com/concepts/cards-in-own-words/): The decision that each card is a few lines in this node's own words, with a link to the document it describes.
+- [Check the status of a document](https://standards.agenticsystemcore.com/procedures/check-a-document-status/): Compare one card with the page of the body that publishes the document, and propose the result.
+- [Check a published file against its digest](https://standards.agenticsystemcore.com/procedures/check-a-published-file/): Compute the digest of one file of this node and compare it with the digest the discovery file gives.
+- [Publish gate](https://standards.agenticsystemcore.com/gates/publish-gate/): Publish gate
+- [Propose a document this node should describe](https://standards.agenticsystemcore.com/concepts/task-propose-a-missing-document/): Name a published document that an agent-readable site builds on and that has no card here, with its address and status.
+- [Re-check the AI usage preferences drafts](https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/): Read the current versions of the two IETF drafts and bring their card up to date, before 20 February 2027.
+- [Re-check the working group on discovering agents](https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/): See whether the IETF working group has adopted a document, and bring its card up to date, before 18 February 2027.
+- [Re-check the web bot authentication draft](https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/): Read the current version of the working group's draft and bring its card up to date, before 2 May 2027.
+
+## Who made it
+
+- [C2PA content credentials](https://standards.agenticsystemcore.com/concepts/content-credentials/): A specification that binds a signed record of how a media file was made and edited to the file itself.
+- [Verifiable Credentials Data Model 2.0](https://standards.agenticsystemcore.com/concepts/verifiable-credentials/): A W3C data model for signed claims that an issuer makes, a holder keeps and a verifier checks.
+
+## WebMCP
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/webmcp/ -->
+```text agsc-content
+
+## What it is
+
+WebMCP is a draft browser interface. A page registers tools written in JavaScript, on `document.modelContext`, and an assistant in the browser can call them.
+
+## Status
+
+Draft Community Group Report of the W3C Web Machine Learning Community Group, dated 13 November 2026. It is not a W3C standard and is not on the W3C standards track. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A page can offer exact actions, so an assistant does not have to guess from the layout.
+```
+
+## AI usage preferences (IETF drafts)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/ -->
+```text agsc-content
+
+## What it is
+
+One draft defines the words for stating how content may be used by automated systems. The other defines how to attach those preferences through `robots.txt` and HTTP header fields.
+
+## Status
+
+Internet-Drafts of the IETF aipref working group, which are work in progress and not RFCs. Version 08 of the vocabulary draft is dated 14 September 2026 and expires on 18 March 2027; version 05 of the other is dated 19 August 2026 and expires on 20 February 2027, and it would update RFC 9309 if approved. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+If the drafts are approved, a publisher can state its wishes about AI use in a common form.
+```
+
+## ODRL Information Model 2.2
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/odrl/ -->
+```text agsc-content
+
+## What it is
+
+ODRL is a policy language: it gives a model for statements about how content and services may be used.
+
+## Status
+
+W3C Recommendation, 15 February 2018. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+Other documents, such as the TDM Reservation Protocol, write their policies with it.
+```
+
+## robots.txt (RFC 9309)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/ -->
+```text agsc-content
+
+## What it is
+
+RFC 9309 specifies the `robots.txt` file and the rules by which a crawler reads it to learn what it may fetch.
+
+## Status
+
+IETF Proposed Standard, September 2022. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+It is the file crawlers already look for before they read a site.
+```
+
+## TDM Reservation Protocol
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/ -->
+```text agsc-content
+
+## What it is
+
+The protocol lets a rights holder reserve text and data mining rights by a file at `/.well-known/tdmrep.json`, an HTTP header or metadata in the page.
+
+## Status
+
+Final Community Group Report of a W3C community group, 10 May 2024. A community group report is not a W3C standard. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+It states a reservation where a crawler can read it.
+```
+
+## Web bot authentication (IETF working group)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/web-bot-auth/ -->
+```text agsc-content
+
+## What it is
+
+The IETF Web Bot Auth working group is chartered to standardise how automated clients prove who they are to sites. Its draft builds on HTTP Message Signatures and Digest Fields.
+
+## Status
+
+An active working group; its charter was approved on 23 October 2025. Its one working-group draft, version 01, is dated 29 October 2026 and expires on 2 May 2027. It is work in progress, not an RFC. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A site could tell a known agent from an unknown one.
+```
+
+## API catalogue (RFC 9727)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/api-catalog/ -->
+```text agsc-content
+
+## What it is
+
+RFC 9727 registers the address `/.well-known/api-catalog` and the link relation `api-catalog`, so a publisher can list its APIs in one link set.
+
+## Status
+
+IETF Proposed Standard, June 2025. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+It is a registered way to tell a program which APIs a site offers and where.
+```
+
+## IETF working group on discovering agents (DAWN)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/dawn-working-group/ -->
+```text agsc-content
+
+## What it is
+
+The IETF working group Discovery of Agents With Names is chartered to specify how a client discovers public facts about AI agents and resources.
+
+## Status
+
+An active working group; its charter was approved on 22 October 2026. On 18 November 2026 it had adopted no document; the drafts that carry its name are individual drafts. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+Its output may fix where an agent looks first.
+```
+
+## Data Catalog Vocabulary (DCAT 3)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/dcat/ -->
+```text agsc-content
+
+## What it is
+
+DCAT is a vocabulary for describing catalogues, the datasets in them and the services that give access to data.
+
+## Status
+
+W3C Recommendation, 22 August 2024. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A site that publishes data can describe it in terms that catalogue harvesters read.
+```
+
+## Link sets (RFC 9264)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/link-sets/ -->
+```text agsc-content
+
+## What it is
+
+RFC 9264 defines two formats, one in JSON and one in text, that carry a set of typed links in one document, and the link relation `linkset`.
+
+## Status
+
+IETF Proposed Standard, July 2022. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+One document can list everything a site offers to a program.
+```
+
+## llms.txt
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/llms-txt/ -->
+```text agsc-content
+
+## What it is
+
+The page at llmstxt.org proposes a Markdown file, `/llms.txt`, at the root of a site or at any path in it, with a short overview and links to Markdown versions of pages.
+
+## Status
+
+A proposal by one author, first published on 3 September 2024; version 2 of the page is dated 10 August 2026. It is not a document of any standards body. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+It is a plain file that costs little to publish.
+```
+
+## schema.org
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/schema-org/ -->
+```text agsc-content
+
+## What it is
+
+schema.org is a shared vocabulary of types and properties for describing things on pages. It can be written in JSON-LD, Microdata or RDFa.
+
+## Status
+
+A community vocabulary, not a standard of a standards body. Release 30.1 is dated 16 September 2026. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+Search engines and other programs already read it.
+```
+
+## security.txt (RFC 9116)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/security-txt/ -->
+```text agsc-content
+
+## What it is
+
+RFC 9116 defines a text file, served at `/.well-known/security.txt`, that tells a researcher how to report a vulnerability.
+
+## Status
+
+Informational RFC, April 2022. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A person or a program that finds a problem knows where to send it.
+```
+
+## Web linking (RFC 8288)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/web-linking/ -->
+```text agsc-content
+
+## What it is
+
+RFC 8288 defines typed links, each with a relation type that says what the link means, and the HTTP `Link` header field.
+
+## Status
+
+IETF Proposed Standard, October 2017. It obsoletes RFC 5988. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A link that names its kind can be followed by a program without guessing.
+```
+
+## Well-known addresses (RFC 8615)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/well-known-uris/ -->
+```text agsc-content
+
+## What it is
+
+RFC 8615 reserves the path prefix `/.well-known/` and a registry of names under it, so a site can publish information about itself at a fixed place.
+
+## Status
+
+IETF Proposed Standard, May 2019. It obsoletes RFC 5785. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A program can look for a known file name without reading the site first.
+```
+
+## From Internet-Draft to RFC
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/ -->
+```text agsc-content
+
+## What it is
+
+An Internet-Draft is work in progress. Under RFC 2026, a draft that stays unchanged for more than six months is removed. Each draft also states the day it expires. An RFC is published once and keeps its number; a later RFC may update or obsolete it. RFCs are published in streams: IETF, IAB, IRTF, Independent Submission and Editorial.
+
+## Status
+
+RFC 2026 is a Best Current Practice of October 1996, updated by later RFCs. RFC 9920, of February 2026, describes the RFC Editor model and obsoletes RFC 9280. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A card on this site about a draft carries the date on which the draft expires.
+```
+
+## W3C reports and Recommendations
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/ -->
+```text agsc-content
+
+## What it is
+
+On the Recommendation track a document moves from Working Draft to Candidate Recommendation, and then to Recommendation. A Community Group publishes reports, draft or final, and its reports are not W3C standards.
+
+## Status
+
+The W3C Process Document in force is dated 18 August 2025. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+Two documents on w3.org can have very different standing; each card on this site says which.
+```
+
+## Digest fields (RFC 9530)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/digest-fields/ -->
+```text agsc-content
+
+## What it is
+
+RFC 9530 defines the HTTP fields `Content-Digest` and `Repr-Digest`, which carry a hash of the message content or of the representation.
+
+## Status
+
+IETF Proposed Standard, February 2024. It obsoletes RFC 3230. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A reader can check that a file was not changed or damaged on the way, if the digest itself comes over HTTPS or is signed.
+```
+
+## HTTP message signatures (RFC 9421)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/http-message-signatures/ -->
+```text agsc-content
+
+## What it is
+
+RFC 9421 defines how to sign parts of an HTTP message, so that a receiver can check who sent it and that those parts were not changed.
+
+## Status
+
+IETF Proposed Standard, February 2024. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A digest shows the bytes were not changed by accident; a signature also says who vouches for them.
+```
+
+## JSON canonicalization (RFC 8785)
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/json-canonicalization/ -->
+```text agsc-content
+
+## What it is
+
+RFC 8785 gives one fixed way to write a JSON value within the I-JSON subset, so that equal data gives the same bytes.
+
+## Status
+
+Informational RFC of the Independent Submission stream, June 2020. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+Two programs can hash the same JSON and get the same digest.
+```
+
+## RDF dataset canonicalization
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/ -->
+```text agsc-content
+
+## What it is
+
+The document defines an algorithm that gives one fixed form of an RDF dataset, so that equal datasets can be compared, hashed or signed.
+
+## Status
+
+W3C Recommendation, 21 May 2024. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A graph can carry a digest, as a JSON file can.
+```
+
+## JSON-LD 1.1
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/json-ld/ -->
+```text agsc-content
+
+## What it is
+
+JSON-LD is a JSON syntax for linked data: a JSON document whose keys and values map to RDF.
+
+## Status
+
+W3C Recommendation, 16 July 2020. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+Programs that read JSON can parse the file, and a JSON-LD processor reads it as a graph.
+```
+
+## PROV-O
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/prov-o/ -->
+```text agsc-content
+
+## What it is
+
+PROV-O gives classes and properties for recording provenance: who or what made or changed a thing, and from what.
+
+## Status
+
+W3C Recommendation, 30 April 2013. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A reader can ask where a statement came from.
+```
+
+## RDF
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/rdf/ -->
+```text agsc-content
+
+## What it is
+
+RDF is a data model in which every statement is a triple: a subject, a predicate and an object. Triples form graphs, and graphs form datasets.
+
+## Status
+
+RDF 1.1 Concepts is a W3C Recommendation, 25 February 2014. RDF 1.2 Concepts is a Candidate Recommendation Draft dated 16 November 2026, so 1.1 is still the Recommendation. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+It lets separate sites publish facts that fit together.
+```
+
+## SHACL
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/shacl/ -->
+```text agsc-content
+
+## What it is
+
+SHACL is a language for checking an RDF graph against a set of conditions, called shapes.
+
+## Status
+
+W3C Recommendation, 20 July 2017. SHACL 1.2 Core is a Working Draft dated 16 November 2026. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A publisher can state what a valid graph looks like, and anyone can run the check.
+```
+
+## SKOS
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/skos/ -->
+```text agsc-content
+
+## What it is
+
+SKOS is a data model for thesauri, taxonomies, classification schemes and subject heading systems: concepts, their labels, and broader, narrower and related concepts.
+
+## Status
+
+W3C Recommendation, 18 August 2009. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A set of terms can be published in a form other tools already read.
+```
+
+## SPARQL
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/sparql/ -->
+```text agsc-content
+
+## What it is
+
+SPARQL is a query language for RDF data.
+
+## Status
+
+SPARQL 1.1 Query Language is a W3C Recommendation, 21 March 2013. SPARQL 1.2 Query Language is a Working Draft dated 16 November 2026. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A question about a graph can be written once and asked of any store that holds it.
+```
+
+## Card format
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/card-format/ -->
+```text agsc-content
+
+## Specification
+
+A card names one subject (a document, a closely linked pair of documents, or an IETF working group) and links to each document it relies on. It says what the document is, its status in the words of the body that publishes it, and the date of that status. It carries the day on which the status was last checked. A card about a draft also carries the day on which the draft expires.
+```
+
+## Cards are written in the node's own words
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/cards-in-own-words/ -->
+```text agsc-content
+
+## Decision
+
+Each card is a few lines in this node's own words, with a link to the document it describes. No text is copied from a document.
+```
+
+## Check the status of a document
+<!-- agsc:item https://standards.agenticsystemcore.com/procedures/check-a-document-status/ -->
+```text agsc-content
+
+# Check the status of a document
+
+## When
+
+A card's status was last checked more than six months ago, or the draft it describes has reached its expiry date.
+
+## Steps
+
+1. Open the card and follow the first address in its `sources`.
+2. For an RFC, read its page at the RFC Editor: status, date, and what updates or obsoletes it.
+3. For an Internet-Draft, read its page on the IETF Datatracker: version, date and expiry.
+4. For a W3C document, read the status section at the top of the document.
+5. For an IETF working group, read its About, Documents and History pages on the Datatracker. For any other document, read the page the card links to, and note its version and date.
+6. Compare with the card. Propose the changed sentences, the new `verified` day and, for a draft, the new `stale_after` day.
+
+## Checks
+
+`agsc lint` passes on the proposal, and the proposal changes one card.
+```
+
+## Check a published file against its digest
+<!-- agsc:item https://standards.agenticsystemcore.com/procedures/check-a-published-file/ -->
+```text agsc-content
+
+# Check a published file against its digest
+
+## When
+
+You want to know that a file you fetched matches the digest this node's discovery file gives. Fetch both over HTTPS from this node.
+
+## Steps
+
+1. Fetch the discovery file at `/.well-known/knowledge-linkset` and find the entry of the file, for example `/llms.txt`. Its `digest` value has the form `sha-256=:<Base64 text>:`.
+2. Fetch the file and compute its SHA-256 digest in Base64, for example with `curl -s https://standards.agenticsystemcore.com/llms.txt | openssl dgst -sha256 -binary | base64`.
+3. Compare the two Base64 texts.
+
+## Checks
+
+The two texts are equal.
+```
+
+## Publish gate
+<!-- agsc:item https://standards.agenticsystemcore.com/gates/publish-gate/ -->
+```text agsc-content
+
+# Publish gate
+
+Every change passes these checks, and a person merges it, before it is published.
+```
+
+## Propose a document this node should describe
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/task-propose-a-missing-document/ -->
+```text agsc-content
+
+## Task
+
+Name the document, give its address and its status in the words of the body that publishes it, and say in one line what it is for. Send it as a pull request, as a new card in the card format.
+```
+
+## Re-check the AI usage preferences drafts
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/ -->
+```text agsc-content
+
+## Task
+
+Open the two drafts on the IETF Datatracker. Compare version, date, expiry and status with the card. Propose the changes, and the new day for the next check.
+```
+
+## Re-check the working group on discovering agents
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/ -->
+```text agsc-content
+
+## Task
+
+Open the working group page on the IETF Datatracker. See whether it has adopted a document. Propose the changes to the card, and the new day for the next check.
+```
+
+## Re-check the web bot authentication draft
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/ -->
+```text agsc-content
+
+## Task
+
+Open the draft and the working group page on the IETF Datatracker. Compare version, date, expiry and status with the card. Propose the changes, and the new day for the next check.
+```
+
+## C2PA content credentials
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/content-credentials/ -->
+```text agsc-content
+
+## What it is
+
+The C2PA technical specification binds a signed record of how a media file was made and edited, called a manifest, to the file.
+
+## Status
+
+Version 2.5 of the specification is dated October 2026. It is published by the Coalition for Content Provenance and Authenticity, a Joint Development Foundation project, not by the IETF or the W3C. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A reader can check where an image or a recording came from.
+```
+
+## Verifiable Credentials Data Model 2.0
+<!-- agsc:item https://standards.agenticsystemcore.com/concepts/verifiable-credentials/ -->
+```text agsc-content
+
+## What it is
+
+The model describes signed claims made by an issuer, which a holder keeps and shows, and which a verifier can check.
+
+## Status
+
+W3C Recommendation, 15 May 2025. Version 2.1 is a Working Draft dated 22 October 2026. Status checked on 18 November 2026.
+
+## Why a site for agents uses it
+
+A verifier can check a claim about a person, an organisation or a document.
+```

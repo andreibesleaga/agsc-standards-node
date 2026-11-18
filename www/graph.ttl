@@ -1,0 +1,975 @@
+@prefix asc: <https://w3id.org/agentic-system-core/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://standards.agenticsystemcore.com/> a asc:Bundle ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:specVersion "1.1.0" .
+
+<https://standards.agenticsystemcore.com/clusters/act/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How a page offers actions to an assistant."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/webmcp/> ;
+    skos:prefLabel "Act"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/ask-first/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How a site says what automated readers may do, and how a reader says who it is."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/> , <https://standards.agenticsystemcore.com/concepts/odrl/> , <https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/> , <https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/> , <https://standards.agenticsystemcore.com/concepts/web-bot-auth/> ;
+    skos:prefLabel "Ask first"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/find/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How a program finds what a site offers: fixed addresses, typed links and catalogues."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/api-catalog/> , <https://standards.agenticsystemcore.com/concepts/dawn-working-group/> , <https://standards.agenticsystemcore.com/concepts/dcat/> , <https://standards.agenticsystemcore.com/concepts/link-sets/> , <https://standards.agenticsystemcore.com/concepts/llms-txt/> , <https://standards.agenticsystemcore.com/concepts/schema-org/> , <https://standards.agenticsystemcore.com/concepts/security-txt/> , <https://standards.agenticsystemcore.com/concepts/web-linking/> , <https://standards.agenticsystemcore.com/concepts/well-known-uris/> ;
+    skos:prefLabel "Find"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/how-it-works/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How to read the status of a document of the IETF or the W3C."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/> , <https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/> ;
+    skos:prefLabel "How it works"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/trust-the-bytes/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How a reader checks that a file is the one that was published, and who vouches for it."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/digest-fields/> , <https://standards.agenticsystemcore.com/concepts/http-message-signatures/> , <https://standards.agenticsystemcore.com/concepts/json-canonicalization/> , <https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/> ;
+    skos:prefLabel "Trust the bytes"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/understand/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How facts are written so that programs on different sites read them the same way."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/json-ld/> , <https://standards.agenticsystemcore.com/concepts/prov-o/> , <https://standards.agenticsystemcore.com/concepts/rdf/> , <https://standards.agenticsystemcore.com/concepts/shacl/> , <https://standards.agenticsystemcore.com/concepts/skos/> , <https://standards.agenticsystemcore.com/concepts/sparql/> ;
+    skos:prefLabel "Understand"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/upkeep/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "The node's own work on one board: the decision, the card format, the gate and the open tasks."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/card-format/> , <https://standards.agenticsystemcore.com/concepts/cards-in-own-words/> , <https://standards.agenticsystemcore.com/concepts/task-propose-a-missing-document/> , <https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/> , <https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/> , <https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/> , <https://standards.agenticsystemcore.com/gates/publish-gate/> , <https://standards.agenticsystemcore.com/procedures/check-a-document-status/> , <https://standards.agenticsystemcore.com/procedures/check-a-published-file/> ;
+    skos:prefLabel "Upkeep"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/clusters/who-made-it/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Cluster ;
+    skos:definition "How a claim or a media file carries a record of its origin that can be checked."@en ;
+    skos:member <https://standards.agenticsystemcore.com/concepts/content-credentials/> , <https://standards.agenticsystemcore.com/concepts/verifiable-credentials/> ;
+    skos:prefLabel "Who made it"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "Two IETF working-group drafts: a vocabulary for stating how content may be used by automated systems, and a way to attach it to content."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "AI usage preferences (IETF drafts)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/#source-1> , <https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/#source-2> ;
+    asc:staleAfter "2027-02-20T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/> .
+
+<https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/#source-1> dcterms:creator "Keller, P.; Thomson, M." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/" ;
+    dcterms:title "A Vocabulary For Expressing AI Usage Preferences" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/#source-2> dcterms:creator "Illyes, G.; Thomson, M." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://datatracker.ietf.org/doc/draft-ietf-aipref-attach/" ;
+    dcterms:title "Associating AI Usage Preferences with Content in HTTP" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/api-catalog/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:requires <https://standards.agenticsystemcore.com/concepts/link-sets/> , <https://standards.agenticsystemcore.com/concepts/web-linking/> , <https://standards.agenticsystemcore.com/concepts/well-known-uris/> ;
+    a asc:Concept ;
+    skos:definition "A well-known address and a link relation with which a publisher lists its APIs in one link set."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "API catalogue (RFC 9727)"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/api-catalog/#source-1> ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/api-catalog/#source-1> dcterms:creator "Smith, K." ;
+    dcterms:date "2025" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9727" ;
+    dcterms:title "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/card-format/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "What a card of this node must hold, stated so that tasks can follow it and a check can test it."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Card format"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:decidedBy <https://standards.agenticsystemcore.com/concepts/cards-in-own-words/> ;
+    asc:implementedBy <https://standards.agenticsystemcore.com/concepts/task-propose-a-missing-document/> , <https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/> , <https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/> , <https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/> ;
+    asc:isVerifiedBy <https://standards.agenticsystemcore.com/procedures/check-a-document-status/> ;
+    asc:kind "spec" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/cards-in-own-words/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "The decision that each card is a few lines in this node's own words, with a link to the document it describes."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Cards are written in the node's own words"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:decides <https://standards.agenticsystemcore.com/concepts/card-format/> ;
+    asc:kind "decision" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/content-credentials/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A specification that binds a signed record of how a media file was made and edited to the file itself."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "C2PA content credentials"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/content-credentials/#source-1> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/json-ld/> .
+
+<https://standards.agenticsystemcore.com/concepts/content-credentials/#source-1> dcterms:creator "Coalition for Content Provenance and Authenticity" ;
+    dcterms:date "2026" ;
+    dcterms:source "https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html" ;
+    dcterms:title "Content Credentials: C2PA Technical Specification" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/dawn-working-group/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "The IETF working group chartered to specify how a client discovers public facts about AI agents."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "IETF working group on discovering agents (DAWN)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/dawn-working-group/#source-1> ;
+    asc:staleAfter "2027-02-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/dawn-working-group/#source-1> dcterms:creator "IETF" ;
+    dcterms:date "2026" ;
+    dcterms:source "https://datatracker.ietf.org/wg/dawn/about/" ;
+    dcterms:title "Discovery of Agents With Names (dawn)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/dcat/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A W3C vocabulary for describing catalogues of datasets and data services."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Data Catalog Vocabulary (DCAT 3)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/rdf/> , <https://standards.agenticsystemcore.com/concepts/schema-org/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/dcat/#source-1> ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/dcat/#source-1> dcterms:creator "Albertoni, R.; Browning, D.; Cox, S.; et al." ;
+    dcterms:date "2024" ;
+    dcterms:source "https://www.w3.org/TR/vocab-dcat-3/" ;
+    dcterms:title "Data Catalog Vocabulary (DCAT) - Version 3" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/digest-fields/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:isRequiredBy <https://standards.agenticsystemcore.com/concepts/web-bot-auth/> ;
+    a asc:Concept ;
+    skos:definition "HTTP fields that carry a hash of the message content or of the representation, so a receiver can check what it got."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Digest fields (RFC 9530)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/procedures/check-a-published-file/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/digest-fields/#source-1> ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/http-message-signatures/> .
+
+<https://standards.agenticsystemcore.com/concepts/digest-fields/#source-1> dcterms:creator "Polli, R.; Pardue, L." ;
+    dcterms:date "2024" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9530" ;
+    dcterms:title "Digest Fields" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "How to read the status of an IETF document: a draft is work in progress and expires; an RFC is published and keeps its number."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "From Internet-Draft to RFC"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/#source-1> , <https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/#source-2> ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/#source-1> dcterms:creator "Bradner, S." ;
+    dcterms:date "1996" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc2026" ;
+    dcterms:title "The Internet Standards Process -- Revision 3" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/from-draft-to-rfc/#source-2> dcterms:creator "Hoffman, P.; Rossi, A." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9920" ;
+    dcterms:title "RFC Editor Model (Version 3)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/http-message-signatures/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:isRequiredBy <https://standards.agenticsystemcore.com/concepts/web-bot-auth/> ;
+    a asc:Concept ;
+    skos:definition "A way to sign parts of an HTTP message, so a receiver can check who sent it and that it was not changed."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "HTTP message signatures (RFC 9421)"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/http-message-signatures/#source-1> ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/digest-fields/> .
+
+<https://standards.agenticsystemcore.com/concepts/http-message-signatures/#source-1> dcterms:creator "Backman, A.; Richer, J.; Sporny, M." ;
+    dcterms:date "2024" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9421" ;
+    dcterms:title "HTTP Message Signatures" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/json-canonicalization/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "One fixed way to write JSON, so that equal data gives equal bytes before hashing or signing."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "JSON canonicalization (RFC 8785)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/json-canonicalization/#source-1> ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/json-canonicalization/#source-1> dcterms:creator "Rundgren, A.; Jordan, B.; Erdtman, S." ;
+    dcterms:date "2020" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc8785" ;
+    dcterms:title "JSON Canonicalization Scheme (JCS)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/json-ld/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:isRequiredBy <https://standards.agenticsystemcore.com/concepts/verifiable-credentials/> ;
+    a asc:Concept ;
+    skos:definition "A W3C syntax for writing linked data as JSON, so that a JSON document maps to RDF."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "JSON-LD 1.1"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/schema-org/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/json-ld/#source-1> ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/content-credentials/> ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/rdf/> .
+
+<https://standards.agenticsystemcore.com/concepts/json-ld/#source-1> dcterms:creator "Kellogg, G.; Champin, P.-A.; Longley, D." ;
+    dcterms:date "2020" ;
+    dcterms:source "https://www.w3.org/TR/json-ld11/" ;
+    dcterms:title "JSON-LD 1.1" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/link-sets/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:isRequiredBy <https://standards.agenticsystemcore.com/concepts/api-catalog/> ;
+    a asc:Concept ;
+    skos:definition "A document format that carries many typed links at once, in JSON or in text."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Link sets (RFC 9264)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/procedures/check-a-published-file/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/link-sets/#source-1> ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/web-linking/> .
+
+<https://standards.agenticsystemcore.com/concepts/link-sets/#source-1> dcterms:creator "Wilde, E.; Van de Sompel, H." ;
+    dcterms:date "2022" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9264" ;
+    dcterms:title "Linkset: Media Types and a Link Relation Type for Link Sets" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/llms-txt/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A Markdown file, at the root of a site or of a path in it, that gives language models a short overview and links to Markdown pages."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "llms.txt"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/> , <https://standards.agenticsystemcore.com/concepts/well-known-uris/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/llms-txt/#source-1> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/llms-txt/#source-1> dcterms:creator "Howard, J." ;
+    dcterms:date "2024" ;
+    dcterms:source "https://llmstxt.org/" ;
+    dcterms:title "The /llms.txt file, v2" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/odrl/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A W3C policy language for stating how content and services may be used."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "ODRL Information Model 2.2"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/odrl/#source-1> ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/> .
+
+<https://standards.agenticsystemcore.com/concepts/odrl/#source-1> dcterms:creator "Iannella, R.; Villata, S." ;
+    dcterms:date "2018" ;
+    dcterms:source "https://www.w3.org/TR/odrl-model/" ;
+    dcterms:title "ODRL Information Model 2.2" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/prov-o/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A W3C vocabulary for recording who or what made or changed a thing."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "PROV-O"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/rdf/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/prov-o/#source-1> ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/prov-o/#source-1> dcterms:creator "Lebo, T.; Sahoo, S.; McGuinness, D." ;
+    dcterms:date "2013" ;
+    dcterms:source "https://www.w3.org/TR/prov-o/" ;
+    dcterms:title "PROV-O: The PROV Ontology" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A W3C algorithm that gives one fixed form of an RDF dataset, so that it can be hashed or signed."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "RDF dataset canonicalization"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/json-canonicalization/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/#source-1> ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/rdf/> .
+
+<https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/#source-1> dcterms:creator "Longley, D.; Kellogg, G.; Yamamoto, D." ;
+    dcterms:date "2024" ;
+    dcterms:source "https://www.w3.org/TR/rdf-canon/" ;
+    dcterms:title "RDF Dataset Canonicalization" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/rdf/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "The W3C data model for statements about things: triples, graphs and datasets."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "RDF"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/dcat/> , <https://standards.agenticsystemcore.com/concepts/prov-o/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/rdf/#source-1> , <https://standards.agenticsystemcore.com/concepts/rdf/#source-2> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/json-ld/> , <https://standards.agenticsystemcore.com/concepts/rdf-dataset-canonicalization/> , <https://standards.agenticsystemcore.com/concepts/shacl/> , <https://standards.agenticsystemcore.com/concepts/skos/> , <https://standards.agenticsystemcore.com/concepts/sparql/> .
+
+<https://standards.agenticsystemcore.com/concepts/rdf/#source-1> dcterms:creator "Cyganiak, R.; Wood, D.; Lanthaler, M." ;
+    dcterms:date "2014" ;
+    dcterms:source "https://www.w3.org/TR/rdf11-concepts/" ;
+    dcterms:title "RDF 1.1 Concepts and Abstract Syntax" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/rdf/#source-2> dcterms:creator "Kellogg, G.; Hartig, O.; Champin, P.-A.; et al." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://www.w3.org/TR/rdf12-concepts/" ;
+    dcterms:title "RDF 1.2 Concepts and Abstract Data Model" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "The rules of the robots.txt file, with which a site tells crawlers what they may fetch."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "robots.txt (RFC 9309)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/llms-txt/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/#source-1> ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/> .
+
+<https://standards.agenticsystemcore.com/concepts/robots-exclusion-protocol/#source-1> dcterms:creator "Koster, M.; Illyes, G.; Zeller, H.; et al." ;
+    dcterms:date "2022" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9309" ;
+    dcterms:title "Robots Exclusion Protocol" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/schema-org/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A shared vocabulary of types and properties for describing things on web pages."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "schema.org"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/dcat/> , <https://standards.agenticsystemcore.com/concepts/json-ld/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/schema-org/#source-1> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/schema-org/#source-1> dcterms:creator "Schema.org" ;
+    dcterms:date "2026" ;
+    dcterms:source "https://schema.org/docs/releases.html" ;
+    dcterms:title "Release listing" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/security-txt/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A text file at a well-known address that says how to report a security problem."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "security.txt (RFC 9116)"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/security-txt/#source-1> ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/well-known-uris/> .
+
+<https://standards.agenticsystemcore.com/concepts/security-txt/#source-1> dcterms:creator "Foudil, E.; Shafranovich, Y." ;
+    dcterms:date "2022" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc9116" ;
+    dcterms:title "A File Format to Aid in Security Vulnerability Disclosure" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/shacl/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A W3C language for checking an RDF graph against a set of conditions called shapes."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "SHACL"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/shacl/#source-1> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/rdf/> .
+
+<https://standards.agenticsystemcore.com/concepts/shacl/#source-1> dcterms:creator "Knublauch, H.; Kontokostas, D." ;
+    dcterms:date "2017" ;
+    dcterms:source "https://www.w3.org/TR/shacl/" ;
+    dcterms:title "Shapes Constraint Language (SHACL)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/skos/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A W3C data model for thesauri, taxonomies, classification schemes and subject heading systems."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "SKOS"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/skos/#source-1> ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/rdf/> .
+
+<https://standards.agenticsystemcore.com/concepts/skos/#source-1> dcterms:creator "Miles, A.; Bechhofer, S." ;
+    dcterms:date "2009" ;
+    dcterms:source "https://www.w3.org/TR/skos-reference/" ;
+    dcterms:title "SKOS Simple Knowledge Organization System Reference" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/sparql/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "The W3C query language for RDF data, for asking questions of a graph."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "SPARQL"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/sparql/#source-1> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/rdf/> .
+
+<https://standards.agenticsystemcore.com/concepts/sparql/#source-1> dcterms:creator "Harris, S.; Seaborne, A." ;
+    dcterms:date "2013" ;
+    dcterms:source "https://www.w3.org/TR/sparql11-query/" ;
+    dcterms:title "SPARQL 1.1 Query Language" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/task-propose-a-missing-document/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "Name a published document that an agent-readable site builds on and that has no card here, with its address and status."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Propose a document this node should describe"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:implements <https://standards.agenticsystemcore.com/concepts/card-format/> ;
+    asc:kind "task" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" ;
+    asc:taskState "TASK_STATE_SUBMITTED" .
+
+<https://standards.agenticsystemcore.com/concepts/task-recheck-ai-preferences-drafts/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "Read the current versions of the two IETF drafts and bring their card up to date, before 20 February 2027."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Re-check the AI usage preferences drafts"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/ai-preferences-drafts/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:implements <https://standards.agenticsystemcore.com/concepts/card-format/> ;
+    asc:kind "task" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" ;
+    asc:taskState "TASK_STATE_SUBMITTED" .
+
+<https://standards.agenticsystemcore.com/concepts/task-recheck-dawn-working-group/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "See whether the IETF working group has adopted a document, and bring its card up to date, before 18 February 2027."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Re-check the working group on discovering agents"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/dawn-working-group/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:implements <https://standards.agenticsystemcore.com/concepts/card-format/> ;
+    asc:kind "task" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" ;
+    asc:taskState "TASK_STATE_SUBMITTED" .
+
+<https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "Read the current version of the working group's draft and bring its card up to date, before 2 May 2027."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Re-check the web bot authentication draft"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/web-bot-auth/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:implements <https://standards.agenticsystemcore.com/concepts/card-format/> ;
+    asc:kind "task" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" ;
+    asc:taskState "TASK_STATE_SUBMITTED" .
+
+<https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A way for a rights holder to reserve text and data mining rights, in a file, a header or page metadata."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "TDM Reservation Protocol"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/#source-1> ;
+    asc:status "stable" ;
+    asc:uses <https://standards.agenticsystemcore.com/concepts/odrl/> , <https://standards.agenticsystemcore.com/concepts/well-known-uris/> .
+
+<https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/#source-1> dcterms:creator "Le Meur, L." ;
+    dcterms:date "2024" ;
+    dcterms:source "https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/" ;
+    dcterms:title "TDM Reservation Protocol (TDMRep)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/verifiable-credentials/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:requires <https://standards.agenticsystemcore.com/concepts/json-ld/> ;
+    a asc:Concept ;
+    skos:definition "A W3C data model for signed claims that an issuer makes, a holder keeps and a verifier checks."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Verifiable Credentials Data Model 2.0"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/verifiable-credentials/#source-1> , <https://standards.agenticsystemcore.com/concepts/verifiable-credentials/#source-2> ;
+    asc:staleAfter "2027-05-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/verifiable-credentials/#source-1> dcterms:creator "Sporny, M.; Thibodeau Jr, T.; Herman, I.; et al." ;
+    dcterms:date "2025" ;
+    dcterms:source "https://www.w3.org/TR/vc-data-model-2.0/" ;
+    dcterms:title "Verifiable Credentials Data Model v2.0" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/verifiable-credentials/#source-2> dcterms:creator "Sporny, M.; Thibodeau Jr, T.; Herman, I." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://www.w3.org/TR/vc-data-model-2.1/" ;
+    dcterms:title "Verifiable Credentials Data Model v2.1" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "How to read the status of a W3C document: a Recommendation is a W3C standard; a Community Group Report is not."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "W3C reports and Recommendations"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/#source-1> , <https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/#source-2> ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/#source-1> dcterms:creator "Etemad, E. J.; Rivoal, F." ;
+    dcterms:date "2025" ;
+    dcterms:source "https://www.w3.org/policies/process/" ;
+    dcterms:title "W3C Process Document" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/w3c-reports-and-recommendations/#source-2> dcterms:creator "W3C" ;
+    dcterms:date "2013" ;
+    dcterms:source "https://www.w3.org/community/about/faq/" ;
+    dcterms:title "FAQ | Community and Business Groups" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/web-bot-auth/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:requires <https://standards.agenticsystemcore.com/concepts/digest-fields/> , <https://standards.agenticsystemcore.com/concepts/http-message-signatures/> ;
+    a asc:Concept ;
+    skos:definition "The IETF working group on how automated clients prove who they are to the sites they visit."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Web bot authentication (IETF working group)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/task-recheck-web-bot-auth-draft/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/web-bot-auth/#source-1> , <https://standards.agenticsystemcore.com/concepts/web-bot-auth/#source-2> ;
+    asc:staleAfter "2027-05-02T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/web-bot-auth/#source-1> dcterms:creator "IETF" ;
+    dcterms:date "2025" ;
+    dcterms:source "https://datatracker.ietf.org/wg/webbotauth/about/" ;
+    dcterms:title "Web Bot Auth (webbotauth)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/web-bot-auth/#source-2> dcterms:creator "Meunier, T.; Major, S." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/" ;
+    dcterms:title "HTTP Message Signatures for automated traffic" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/web-linking/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:isRequiredBy <https://standards.agenticsystemcore.com/concepts/api-catalog/> ;
+    a asc:Concept ;
+    skos:definition "Typed links between web resources, and the HTTP Link header field that carries them."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Web linking (RFC 8288)"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/web-linking/#source-1> ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/link-sets/> .
+
+<https://standards.agenticsystemcore.com/concepts/web-linking/#source-1> dcterms:creator "Nottingham, M." ;
+    dcterms:date "2017" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc8288" ;
+    dcterms:title "Web Linking" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/webmcp/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Concept ;
+    skos:definition "A draft browser interface with which a web page registers tools that an assistant in the browser can call."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "WebMCP"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/webmcp/#source-1> ;
+    asc:staleAfter "2027-02-18T00:00:00Z"^^xsd:dateTime ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/concepts/webmcp/#source-1> dcterms:creator "Walderman, B.; Sagar, K.; Farolino, D.; et al." ;
+    dcterms:date "2026" ;
+    dcterms:source "https://webmachinelearning.github.io/webmcp/" ;
+    dcterms:title "WebMCP" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/concepts/well-known-uris/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    dcterms:isRequiredBy <https://standards.agenticsystemcore.com/concepts/api-catalog/> ;
+    a asc:Concept ;
+    skos:definition "A reserved path on every site, /.well-known/, where a site publishes files about itself at a fixed place."@en ;
+    skos:inScheme <https://standards.agenticsystemcore.com/> ;
+    skos:prefLabel "Well-known addresses (RFC 8615)"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/llms-txt/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:kind "explainer" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:source <https://standards.agenticsystemcore.com/concepts/well-known-uris/#source-1> ;
+    asc:status "stable" ;
+    asc:usedBy <https://standards.agenticsystemcore.com/concepts/security-txt/> , <https://standards.agenticsystemcore.com/concepts/tdm-reservation-protocol/> .
+
+<https://standards.agenticsystemcore.com/concepts/well-known-uris/#source-1> dcterms:creator "Nottingham, M." ;
+    dcterms:date "2019" ;
+    dcterms:source "https://www.rfc-editor.org/rfc/rfc8615" ;
+    dcterms:title "Well-Known Uniform Resource Identifiers (URIs)" ;
+    a asc:Source ;
+    asc:grade "primary" ;
+    asc:verifiedOn "2026-11-18T00:00:00Z"^^xsd:dateTime .
+
+<https://standards.agenticsystemcore.com/gates/publish-gate/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Gate ;
+    skos:prefLabel "Publish gate"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:level "L2" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
+
+<https://standards.agenticsystemcore.com/procedures/check-a-document-status/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Procedure ;
+    skos:definition "Compare one card with the page of the body that publishes the document, and propose the result."@en ;
+    skos:prefLabel "Check the status of a document"@en ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" ;
+    asc:verifies <https://standards.agenticsystemcore.com/concepts/card-format/> .
+
+<https://standards.agenticsystemcore.com/procedures/check-a-published-file/> dcterms:created "2026-11-18T00:00:00Z"^^xsd:dateTime ;
+    a asc:Procedure ;
+    skos:definition "Compute the digest of one file of this node and compare it with the digest the discovery file gives."@en ;
+    skos:prefLabel "Check a published file against its digest"@en ;
+    skos:related <https://standards.agenticsystemcore.com/concepts/digest-fields/> , <https://standards.agenticsystemcore.com/concepts/link-sets/> ;
+    schema:license "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    schema:usageInfo "LicenseRef-AgenticSystemCore-Content-Use-1.0" ;
+    asc:model "Claude (Anthropic)" ;
+    asc:operator "human:andreibesleaga" ;
+    asc:origin "ai-assisted" ;
+    asc:status "stable" .
