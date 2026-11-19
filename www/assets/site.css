@@ -148,3 +148,65 @@ form.search button { font: inherit; padding: 0.45rem 0.9rem; border: 1px solid v
   main, main.wide { max-width: none; }
   pre { white-space: pre-wrap; overflow: visible; }
 }
+
+/* ---------------------------------------------------------------------------------------------
+   THIS NODE'S LAYOUT (standards.agenticsystemcore.com). Everything above is the engine's default
+   theme, byte for byte (agsc 1.1.0, src/distribution/theme.js); an authored content/assets/site.css
+   replaces it at the same route (AGSC-06-01), so the node's own layout is appended here and nowhere
+   else. When the engine's theme changes, regenerate the part above and keep this block. The same
+   block runs on AgenticSystemCore.com (its assets/layout.css) and on the other nodes of the project, with
+   the same widths, so the three sites look alike. Same colour tokens, no new colours.
+
+   THE ONE CONTAINER. The theme centres three boxes of three widths: the header's <nav> at 60rem,
+   <main> at 46rem (main.wide at 62rem) and the footer's paragraphs at 60rem, so the logo, the page
+   title and the footer start at three different left edges on a laptop. Here the three get the same
+   box, 60rem with 1rem of padding each side, and the content (prose and its boxes, tables, code,
+   diagrams, cards) is ONE width, 51.5rem, the width AgenticSystemCore.com uses (its header menu from the logo to its
+   last link), so every block starts under the logo and ends where the menu row ends; the theme switcher sits
+   beyond, at the container's edge. A diagram's figure takes the width too, while its drawing keeps the
+   theme's 46rem maximum (figure.diagram svg above), as on the main site: it is drawn at its own size. Below 48rem (768 px) the container is the screen less the same
+   1rem padding each side. Lines run to about 105 characters on a laptop; WCAG 1.4.8 (80 characters)
+   is a AAA criterion, not required. */
+header.site nav, main, main.wide, footer.site p { max-width: 60rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+main > :not(figure, pre, table, .table-wrap, .modes) { max-width: 51.5rem; }
+main > figure, main > pre, main > table, main > .table-wrap, main > .modes { max-width: 51.5rem; }
+figure.diagram figcaption { max-width: none; }
+
+/* THE HEADER ROW. In the theme the list of links is one flex item as wide as all its links, so on a
+   tablet it drops below the logo and the theme switcher drops to a third row of its own. Here the
+   list may shrink to 18rem and wraps its links inside, so the logo, the first links and the switcher
+   share the first row, in the markup's order (the reading and focus order do not change). */
+header.site ul { flex: 1 1 18rem; }
+
+/* TOUCH TARGETS. The theme makes the header links and the theme switcher at least 24 px tall (WCAG
+   2.5.8). On a touch screen, and at every width below 64rem (phones and tablets), each control of
+   the header, each rule chip, each line of a contents list and a link alone in a table cell is at
+   least 44 px tall (WCAG 2.5.5). A link inside a sentence keeps the size of the text around it (the
+   exception both criteria make). */
+@media (max-width: 63.99rem), (pointer: coarse) {
+  header.site nav { row-gap: 0; padding-top: 0.25rem; padding-bottom: 0.25rem; }
+  header.site ul { row-gap: 0; }
+  header.site a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; padding: 0; }
+  .theme select { min-height: 44px; min-width: 44px; padding: 0.25rem 0.4rem; }
+  .skip { min-height: 44px; }
+  a.rule { padding-top: 10px; padding-bottom: 10px; }
+  .toc li { margin: 0; }
+  .toc a { display: inline-flex; align-items: center; min-height: 44px; }
+  /* A link alone in a table cell is a control, not a word in a sentence: it becomes an inline-flex
+     box at least 44 px wide and tall, so the clickable area itself (not only its cell) meets the
+     size; the row grows to fit it, and the cell is never narrower than the link plus its padding, so
+     at 320 px a column of names does not shrink below the link (the table then scrolls inside its
+     own wrapper, as WCAG 1.4.10 allows). */
+  td:has(> a:only-child), th:has(> a:only-child) { min-width: calc(44px + 1.1rem); }
+  td > a:only-child, th > a:only-child { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
+}
+
+/* THE FOOTER. Its paragraphs are the container itself, so each takes the content width (53.5rem
+   with its 1rem padding each side) and is pushed right by the room a centred 60rem container would
+   leave: the footer's text starts under the logo and ends under the menu's last link, like everything
+   else. Below 60rem the room is zero; below 53.5rem the paragraph is the screen's width. */
+footer.site p { max-width: 53.5rem; margin-left: max(0px, calc((100% - 60rem) / 2)); margin-right: 0; }
+
+@media print {
+  header.site nav, main, main.wide, footer.site p { max-width: none; }
+}
