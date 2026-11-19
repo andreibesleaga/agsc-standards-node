@@ -64,11 +64,14 @@ derive from the git history.
 The folder `www/agents/` publishes this node as an agent network of the open agentic web
 ([specification](https://github.com/cognizant-ai-labs/agentic-web/blob/fd872b9/docs/worldwide_agentic_web_mvp_spec.md),
 MVP Profile 0.2, the version the Open Agentic Web Challenge judges against): `agent-manifest.json`, the network file `standards_map.network.json` and
-`links.json`. The network is one guide agent whose instructions hold the list of this node's
-cards with their addresses, taken from the node's own `/chunks.jsonl`. It holds no code and
-nothing that the node does not already publish. Another agentic website can load it by the
-address `https://standards.agenticsystemcore.com/agents/standards_map`, after its visitor
-agrees, and run it in that visitor's browser.
+`links.json`, and, under `bridge/` and `runtime/`, the action bridge with the six files of the
+browser runtime its page loads (Apache-2.0, `runtime/LICENSE.txt`). The network is one guide
+agent. Through the bridge it has two tools, both reads of what this node already publishes:
+search the passages of `/chunks.jsonl`, and read one passage with a check of its SHA-256
+digest. Its instructions also hold the list of this node's cards with their addresses. It
+shares nothing that the node does not already publish. Another agentic website can load it by
+the address `https://standards.agenticsystemcore.com/agents/standards_map`, after its visitor
+agrees, and run it in that visitor's browser; the guide then answers from passages it read here.
 
 The files are written after a build by `tools/agentify-node.mjs` of the
 [site repository](https://github.com/andreibesleaga/AgenticSystemCore.com), cloned beside
