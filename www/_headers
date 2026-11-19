@@ -146,4 +146,8 @@
   Access-Control-Allow-Origin: *
 /agents/links.json
   Access-Control-Allow-Origin: *
+/agents/bridge/*
+  ! X-Frame-Options
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'
 # end of agents/
