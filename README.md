@@ -59,6 +59,27 @@ agsc ci                # the gate: lint, two builds compared, verdict
 Build from a git clone, not from a downloaded archive: the ledger and the content version
 derive from the git history.
 
+## The node as an agent network
+
+The folder `www/agents/` publishes this node as an agent network of the open agentic web
+([specification](https://github.com/cognizant-ai-labs/agentic-web/blob/main/docs/worldwide_agentic_web_mvp_spec.md),
+MVP Profile 0.2): `agent-manifest.json`, the network file `standards_map.network.json` and
+`links.json`. The network is one guide agent whose instructions hold the list of this node's
+cards with their addresses, taken from the node's own `/chunks.jsonl`. It holds no code and
+nothing that the node does not already publish. Another agentic website can load it by the
+address `https://standards.agenticsystemcore.com/agents/standards_map`, after its visitor
+agrees, and run it in that visitor's browser.
+
+The files are written after a build by `tools/agentify-node.mjs` of the
+[site repository](https://github.com/andreibesleaga/AgenticSystemCore.com), cloned beside
+this one. `agsc build` removes the block the tool adds to `www/_headers`, so run it again
+after every build; `--check` says whether the files are current and writes nothing:
+
+```sh
+node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map"
+node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" --check
+```
+
 ## Changing it
 
 [CONTRIBUTING.md](CONTRIBUTING.md) says how to propose a card or a correction. The maintainer
