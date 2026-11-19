@@ -62,8 +62,8 @@ derive from the git history.
 ## The node as an agent network
 
 The folder `www/agents/` publishes this node as an agent network of the open agentic web
-([specification](https://github.com/cognizant-ai-labs/agentic-web/blob/main/docs/worldwide_agentic_web_mvp_spec.md),
-MVP Profile 0.2): `agent-manifest.json`, the network file `standards_map.network.json` and
+([specification](https://github.com/cognizant-ai-labs/agentic-web/blob/fd872b9/docs/worldwide_agentic_web_mvp_spec.md),
+MVP Profile 0.2, the version the Open Agentic Web Challenge judges against): `agent-manifest.json`, the network file `standards_map.network.json` and
 `links.json`. The network is one guide agent whose instructions hold the list of this node's
 cards with their addresses, taken from the node's own `/chunks.jsonl`. It holds no code and
 nothing that the node does not already publish. Another agentic website can load it by the
