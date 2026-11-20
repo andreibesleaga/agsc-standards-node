@@ -77,9 +77,11 @@ jobs:
           path: AgenticSystemCore.com
           fetch-depth: 1
           persist-credentials: false
-      # Before the build, which rewrites www/ in this runner: the committed agent files and their
-      # _headers block (what the host serves) must be what the tool writes, or other sites lose
-      # their calls to this node's agent network.
+      # Before the build: the host serves the committed www/, so the committed agent files and
+      # their _headers block must be what the tool writes, or other sites lose their calls to this
+      # node's agent network. The build below rewrites www/ in this runner only and drops the
+      # block by design, so the check belongs here, on what is deployed. It reads the tool from
+      # the site's main branch: change the tool there first, then regenerate this node.
       - name: the agent files are current (www/agents/ and their _headers block)
         run: node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" --callers https://agenticsystemcore.com --proposals https://github.com/andreibesleaga/agsc-standards-node/issues/new --check
       - name: lint (parse, schema, links, governance)
