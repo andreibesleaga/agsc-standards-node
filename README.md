@@ -78,9 +78,17 @@ The files are written after a build by `tools/agentify-node.mjs` of the
 this one. `agsc build` removes the block the tool adds to `www/_headers`, so run it again
 after every build; `--check` says whether the files are current and writes nothing:
 
+The guide also shares one write, with https://agenticsystemcore.com only: a proposal to
+change a card. It opens in a window on this site, where the visitor reads the passage and
+the change and types their name and reason; the calling assistant gets back a reference
+only. Nothing is published by it. The visitor keeps the text and sends it as an issue
+(https://github.com/andreibesleaga/agsc-standards-node/issues/new), and a maintainer decides.
+
 ```sh
-node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map"
-node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" --check
+node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" \
+  --callers https://agenticsystemcore.com --proposals https://github.com/andreibesleaga/agsc-standards-node/issues/new
+node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" \
+  --callers https://agenticsystemcore.com --proposals https://github.com/andreibesleaga/agsc-standards-node/issues/new --check
 ```
 
 ## Changing it

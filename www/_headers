@@ -149,5 +149,5 @@
 /agents/bridge/*
   ! X-Frame-Options
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'
 # end of agents/
