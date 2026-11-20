@@ -66,7 +66,7 @@ The folder `www/agents/` publishes this node as an agent network of the open age
 MVP Profile 0.2, the version the Open Agentic Web Challenge judges against): `agent-manifest.json`, the network file `standards_map.network.json` and
 `links.json`, and, under `bridge/` and `runtime/`, the action bridge with the six files of the
 browser runtime its page loads (Apache-2.0, `runtime/LICENSE.txt`). The network is one guide
-agent. Through the bridge it has two tools, both reads of what this node already publishes:
+agent. Through the bridge it has two tools shared with any site, both reads of what this node already publishes:
 search the passages of `/chunks.jsonl`, and read one passage with a check of its SHA-256
 digest. Its instructions also hold the list of this node's cards with their addresses. It
 shares nothing that the node does not already publish. Another agentic website can load it by
@@ -78,9 +78,17 @@ The files are written after a build by `tools/agentify-node.mjs` of the
 this one. `agsc build` removes the block the tool adds to `www/_headers`, so run it again
 after every build; `--check` says whether the files are current and writes nothing:
 
+A third tool, a write, is shared with https://agenticsystemcore.com only: a proposal to
+change a card. It opens in a window on this site, where the visitor reads the passage and
+the change and types their name and reason; the calling assistant gets back a reference
+only. Nothing is published by it. The visitor keeps the text and sends it as an issue
+(https://github.com/andreibesleaga/agsc-standards-node/issues/new), and a maintainer decides.
+
 ```sh
-node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map"
-node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" --check
+node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" \
+  --callers https://agenticsystemcore.com --proposals https://github.com/andreibesleaga/agsc-standards-node/issues/new
+node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" \
+  --callers https://agenticsystemcore.com --proposals https://github.com/andreibesleaga/agsc-standards-node/issues/new --check
 ```
 
 ## Changing it
