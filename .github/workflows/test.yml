@@ -70,6 +70,18 @@ jobs:
       - name: install the engine
         working-directory: agentic-system-core
         run: npm ci
+      - name: the site repository, beside it (its tool writes this node's agent files)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: andreibesleaga/AgenticSystemCore.com
+          path: AgenticSystemCore.com
+          fetch-depth: 1
+          persist-credentials: false
+      # Before the build, which rewrites www/ in this runner: the committed agent files and their
+      # _headers block (what the host serves) must be what the tool writes, or other sites lose
+      # their calls to this node's agent network.
+      - name: the agent files are current (www/agents/ and their _headers block)
+        run: node ../AgenticSystemCore.com/tools/agentify-node.mjs . --name standards_map --label "Standards Map" --callers https://agenticsystemcore.com --proposals https://github.com/andreibesleaga/agsc-standards-node/issues/new --check
       - name: lint (parse, schema, links, governance)
         run: node ../agentic-system-core/bin/agsc.js lint
       - name: build (the route set into www/)
