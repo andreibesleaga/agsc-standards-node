@@ -75,8 +75,11 @@ agrees, and run it in that visitor's browser; the guide then answers from passag
 
 The files are written after a build by `tools/agentify-node.mjs` of the
 [site repository](https://github.com/andreibesleaga/AgenticSystemCore.com), cloned beside
-this one. `agsc build` removes the block the tool adds to `www/_headers`, so run it again
-after every build; `--check` says whether the files are current and writes nothing:
+this one. `agsc build` removes the blocks the tool adds to `www/_headers` and `www/_redirects`,
+so run it again after every build; `--check` says whether the files are current and writes
+nothing. The network's address is a name, so the block in `_redirects` sends a person who opens
+it to the home page, and sends `/favicon.ico` to `/favicon.svg`, which the tool writes when the
+node has none:
 
 A fourth tool, a write, is shared with https://agenticsystemcore.com only: a proposal to
 change a card. It opens in a window on this site, where the visitor reads the passage and
