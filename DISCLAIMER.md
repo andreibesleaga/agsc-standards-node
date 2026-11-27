@@ -24,6 +24,8 @@ As is, no warranty or liability; not advice. Unaffiliated with named organisatio
 
 **What you may do with this text.** The prose of this node is published under the Content Use Terms above: all rights are reserved, and you may read it, quote it with attribution, index it, cite a chunk with its provenance, and compose items into a Harness for your own project. See the terms in full on this page.
 
+**Agents and assistants.** Agents and assistants are welcome to read, cite and check everything here; only collection for model training is reserved. Google-Extended is not refused, so that Gemini can read these pages when a person asks; the reservation of text and data mining rights for model training stays as stated here, in `/.well-known/tdmrep.json` and in the content signal.
+
 **No guarantee of availability.** This site, its files and its addresses may change, move or stop at any time, without notice. Nothing here promises that any version, address or service will stay available.
 
 **Rights not granted are reserved.** Every right in this work that the licences on this page do not expressly grant is reserved by its author.
